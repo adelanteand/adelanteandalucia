@@ -1,0 +1,9 @@
+.c-content {
+  > *:not(.alignwide):not(.alignfull):not(.wp-block-separator) {
+    @include container($container-small-px);
+  }
+
+  > .alignwide {
+    @include container;
+  }
+}

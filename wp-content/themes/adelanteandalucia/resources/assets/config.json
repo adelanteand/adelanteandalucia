@@ -1,0 +1,26 @@
+{
+  "entry": {
+    "editor": [
+      "./styles/editor.scss"
+    ],
+    "main": [
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ],
+    "customizer": [
+      "./scripts/customizer.js"
+    ],
+    "gutenberg": [
+      "./scripts/gutenberg.js"
+    ]
+  },
+  "publicPath": "/wp-content/themes/adelanteandalucia",
+  "devUrl": "http://adelanteandalucia.localhost",
+  "proxyUrl": "http://localhost:3000",
+  "cacheBusting": "[name]_[hash:8]",
+  "watch": [
+    "app/**/*.php",
+    "config/**/*.php",
+    "resources/views/**/*.php"
+  ]
+}

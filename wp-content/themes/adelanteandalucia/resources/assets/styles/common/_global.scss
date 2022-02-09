@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  @include body-text;
+
+  color: $black;
+  background: $white;
+}
+
+a {
+  transition: $transition-standard;
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.o-container {
+  @include container;
+
+  &--full {
+    max-width: rem($container-full-px);
+  }
+
+  &--small {
+    max-width: rem($container-small-px);
+  }
+
+  &--stretch {
+    min-height: 50vh;
+  }
+}
+
+.oembed,
+.wp-video {
+  flex: 0 0 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+
+  iframe,
+  video,
+  .mejs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

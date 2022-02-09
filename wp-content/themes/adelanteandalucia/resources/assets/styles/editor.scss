@@ -1,0 +1,35 @@
+@import "common/variables";
+@import "common/mixins";
+
+/* Main column width */
+.wp-block {
+  @include body-text;
+
+  max-width: 80%;
+}
+
+.interface-interface-skeleton__sidebar {
+  width: 30%;
+
+  .button {
+    width: auto;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+body .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
+  width: 100% !important;
+}
+
+.acf-block-preview {
+  @import "components/buttons";
+  @import "components/forms";
+
+  /* Gutenberg Blocks */
+  @import "blocks/base";
+
+  /** Utilities **/
+}

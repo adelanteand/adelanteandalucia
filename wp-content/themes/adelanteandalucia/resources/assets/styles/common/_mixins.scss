@@ -1,0 +1,72 @@
+@use "sass:math";
+@use "sass:string";
+
+@function strip-unit($number) {
+  @if type-of($number) == "number"and not unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+
+  @return $number;
+}
+
+@function rem($size) {
+  $rem-size: math.div($size, 16px);
+
+  @return #{$rem-size}rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: rem($size);
+}
+
+@function gap($times: 1) {
+  $rem-size: math.div(($gap * $times), 16px);
+
+  @return #{$rem-size}rem;
+}
+
+@mixin font-between($min, $max, $max-res: $xl, $min-res: $xs) {
+  $min: strip-unit($min);
+  $max: strip-unit($max);
+  $max-res: strip-unit($max-res);
+  $min-res: strip-unit($min-res);
+    $factor: math.div(1, ($max-res - $min-res)) * ($max - $min);
+  $calc-value: string.unquote("#{rem($min - ($min-res * $factor * 1px))} + #{100vw * $factor}");
+
+  font-size: $min * 1px;
+  font-size: clamp(#{rem($min * 1px)}, #{$calc-value}, #{rem($max * 1px)});
+
+  @media (min-width: ($max-res * 1px)) {
+    font-size: $max * 1px;
+  }
+}
+
+@mixin container($width: $container-px, $gap: $gap * 2) {
+  width: 100%;
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem($gap);
+  padding-right: rem($gap);
+}
+
+@mixin body-text {
+  font-family: $font-primary;
+  font-size: rem(16px);
+
+  @media (min-width: $md) {
+    font-size: rem(20px);
+    line-height: 1.4;
+  }
+}
+
+@mixin inset-margins {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
