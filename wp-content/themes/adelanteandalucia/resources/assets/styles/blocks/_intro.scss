@@ -1,0 +1,49 @@
+.c-intro {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__image {
+    width: 100%;
+    min-height: 320px;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    margin-top: -100px;
+    z-index: 1;
+    position: relative;
+
+    @media (min-width: $md) {
+      margin-top: gap(-8);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    background-color: var(--primary);
+    padding: gap(4);
+    margin-bottom: gap(4);
+
+    @media (min-width: $md) {
+      flex: 0 0 43%;
+      max-width: 43%;
+      padding: gap(8);
+      margin: 0;
+    }
+  }
+
+  &__text {
+    @media (min-width: $md) {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: gap(16);
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+}

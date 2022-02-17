@@ -135,6 +135,7 @@ add_action('init', function () {
  */
 add_filter('allowed_block_types', function ($allowed_blocks) {
     return [
+        'acf/intro',
         'acf/base',
         'core/paragraph',
         'core/heading',

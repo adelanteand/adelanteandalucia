@@ -94,7 +94,7 @@ Container::getInstance()
 
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
-        'page_title' => 'adelanteandalucia',
-        'menu_title' => 'adelanteandalucia',
+        'page_title' => 'Adelante Andalucía',
+        'menu_title' => 'Adelante Andalucía',
     ));
 }

@@ -1,5 +1,5 @@
 {{--
-  Title: adelanteandalucia: Base block
+  Title: AA: Base block
   Description: Base block description
   Category: layout
   Icon: feedback

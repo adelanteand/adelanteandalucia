@@ -16,6 +16,7 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "layouts/section";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -30,4 +31,5 @@
 @import "layouts/tinymce";
 
 /* Gutenberg blocks */
+@import "blocks/intro";
 @import "blocks/base";

@@ -29,6 +29,7 @@ body .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
   @import "components/forms";
 
   /* Gutenberg Blocks */
+  @import "blocks/intro";
   @import "blocks/base";
 
   /** Utilities **/

@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', function () {
         'ajax_url' => admin_url('admin-ajax.php'),
         'ajax_nonce' => wp_create_nonce('ungrynerd'),
     );
-    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css?family=Work+Sans:wght@400;700;800;900&display=swap', false, null);
+    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&display=swap', false, null);
     wp_enqueue_style('adelanteandalucia.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('adelanteandalucia.js', asset_path('scripts/main.js'), [], null, true);
     wp_localize_script('adelanteandalucia.js', 'ungrynerd', $ajax_params);

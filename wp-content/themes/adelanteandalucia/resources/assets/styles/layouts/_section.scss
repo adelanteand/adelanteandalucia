@@ -1,0 +1,9 @@
+.o-section {
+  margin-top: gap(12);
+  margin-bottom: gap(12);
+
+  @media (min-width: $md) {
+    margin-top: gap(16);
+    margin-bottom: gap(16);
+  }
+}

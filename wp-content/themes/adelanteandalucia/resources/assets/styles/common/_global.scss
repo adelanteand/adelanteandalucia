@@ -51,6 +51,11 @@ a {
   }
 }
 
+p {
+  margin-top: gap(2);
+  margin-bottom: gap(2);
+}
+
 .oembed,
 .wp-video {
   flex: 0 0 100%;
