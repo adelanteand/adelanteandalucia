@@ -20,6 +20,7 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/texts";
 @import "layouts/header";
 @import "layouts/content";
 @import "layouts/sidebar";
@@ -27,11 +28,6 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-
-.swiper-container {
-  width: 600px;
-  height: 300px;
-}
 
 /* Gutenberg blocks */
 @import "blocks/base";

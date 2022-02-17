@@ -21,13 +21,13 @@ img {
 body {
   @include body-text;
 
-  color: $black;
-  background: $white;
+  color: var(--primary-dark);
+  background: var(--white);
 }
 
 a {
   transition: $transition-standard;
-  color: $primary;
+  color: var(--primary);
   text-decoration: none;
 
   &:hover {

@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', function () {
         'ajax_url' => admin_url('admin-ajax.php'),
         'ajax_nonce' => wp_create_nonce('ungrynerd'),
     );
-    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css?family=Montserrat:300,400,600,800&display=swap', false, null);
+    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css?family=Work+Sans:wght@400;700;800&display=swap', false, null);
     wp_enqueue_style('adelanteandalucia.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('adelanteandalucia.js', asset_path('scripts/main.js'), [], null, true);
     wp_localize_script('adelanteandalucia.js', 'ungrynerd', $ajax_params);
@@ -24,15 +24,6 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('comment-reply');
     }
 }, 100);
-
-add_filter('init', function () {
-    if (is_admin()) {
-        return;
-    }
-
-    wp_dequeue_script('jquery');
-    wp_deregister_script('jquery', false);
-});
 
 add_action('wp_head', function () {
     echo '<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>';

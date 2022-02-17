@@ -31,7 +31,7 @@
   $max: strip-unit($max);
   $max-res: strip-unit($max-res);
   $min-res: strip-unit($min-res);
-    $factor: math.div(1, ($max-res - $min-res)) * ($max - $min);
+  $factor: math.div(1, ($max-res - $min-res)) * ($max - $min);
   $calc-value: string.unquote("#{rem($min - ($min-res * $factor * 1px))} + #{100vw * $factor}");
 
   font-size: $min * 1px;
@@ -51,14 +51,63 @@
   padding-right: rem($gap);
 }
 
-@mixin body-text {
-  font-family: $font-primary;
-  font-size: rem(16px);
+@mixin th1 {
+  @include font-between(48px, 64px);
 
-  @media (min-width: $md) {
-    font-size: rem(20px);
-    line-height: 1.4;
-  }
+  font-family: $font-primary;
+  line-height: 1;
+  font-weight: 800;
+}
+
+@mixin th2 {
+  @include font-between(40px, 56px);
+
+  font-family: $font-primary;
+  line-height: 1;
+  font-weight: 800;
+}
+
+@mixin th3 {
+  @include font-between(32px, 48px);
+
+  font-family: $font-primary;
+  line-height: 1;
+  font-weight: 800;
+}
+
+@mixin th4 {
+  @include font-between(32px, 40px);
+
+  font-family: $font-primary;
+  line-height: 1;
+  font-weight: 800;
+}
+
+@mixin th5 {
+  font-size: rem(32px);
+  font-family: $font-primary;
+  line-height: 1;
+  font-weight: 800;
+}
+
+@mixin th6 {
+  font-size: rem(24px);
+  font-family: $font-primary;
+  line-height: 1.33;
+  font-weight: 800;
+}
+
+@mixin body-text {
+  @include font-between(16px, 18px);
+
+  font-family: $font-primary;
+  line-height: 1.78;
+}
+
+@mixin body-text-2 {
+  font-size: rem(14px);
+  font-family: $font-primary;
+  line-height: 1.71;
 }
 
 @mixin inset-margins {
