@@ -44,3 +44,4 @@ node_modules
 npm-debug.log
 wp-content/*.sql
 movefile.yml
+wp-content/*.sql.gz
