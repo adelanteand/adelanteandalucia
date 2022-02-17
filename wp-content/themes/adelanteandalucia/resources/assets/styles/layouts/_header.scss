@@ -1,13 +1,23 @@
 .c-header {
+  background-color: var(--primary-dark);
+  padding: gap(4) 0;
+  position: relative;
+
+  @media (min-width: $md) {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .custom-logo-link {
     display: block;
-    max-width: 120px;
+    max-width: 194px;
     position: relative;
     z-index: 10;
-
-    @media (min-width: $md) {
-      max-width: 160px;
-    }
 
     img {
       display: block;
@@ -15,10 +25,10 @@
   }
 
   &__menu-toggle {
-    flex: 0 0 22px;
+    flex: 0 0 gap(4);
     display: block;
-    height: 22px;
-    width: 22px;
+    height: gap(4);
+    width: gap(4);
     text-decoration: none;
     position: relative;
 
@@ -33,19 +43,19 @@
     .bar {
       display: block;
       width: 100%;
-      height: 2px;
-      background: var(--white);
+      height: 6px;
+      background: var(--primary);
       position: absolute;
       right: 0;
       top: 0;
       transition: 0.25s ease-in-out;
 
       &:nth-child(2) {
-        top: calc(50% - 1px);
+        top: calc(50% - 3px);
       }
 
       &:nth-child(3) {
-        top: calc(100% - 2px);
+        top: calc(100% - 6px);
       }
     }
 
@@ -72,39 +82,102 @@
 
   .nav-primary {
     background-color: var(--primary);
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 75vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    opacity: 0%;
-    z-index: -1;
-    visibility: hidden;
-    transition: right 0.3s linear 0s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    z-index: 10;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
 
     @media (min-width: $md) {
       position: relative;
-      right: 0;
+      top: auto;
+      left: auto;
       background-color: transparent;
       height: auto;
+      max-height: unset;
       width: auto;
       z-index: unset;
-      visibility: visible;
-      opacity: 100%;
       flex: 1;
       padding: 0;
+      display: flex;
       justify-content: flex-end;
     }
 
     &.is-open {
-      z-index: 99;
-      opacity: 100%;
-      visibility: visible;
-      right: 0;
+      max-height: 100vh;
+    }
+  }
+
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $md) {
+      display: flex;
+    }
+
+    .menu-item {
+      font-size: rem(18px);
+      font-weight: 900;
+      width: 100%;
+      background-color: rgba($primary-dark, 0.95);
+
+      &:nth-child(2) {
+        background-color: rgba($primary-dark, 0.9);
+      }
+
+      &:nth-child(3) {
+        background-color: rgba($primary-dark, 0.85);
+      }
+
+      &:nth-child(4) {
+        background-color: rgba($primary-dark, 0.8);
+      }
+
+      &.donate {
+        background-color: var(--primary);
+        text-transform: uppercase;
+
+        @media (min-width: $md) {
+          margin-left: gap(3);
+        }
+
+        a {
+          color: var(--primary-dark);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @media (min-width: $md) {
+            padding: gap(6);
+          }
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: gap(3);
+            height: gap(3);
+            background: url("../../images/icon-donate.svg") no-repeat center;
+            margin-right: gap(2);
+          }
+        }
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        padding: gap(4);
+        color: var(--white);
+        text-align: center;
+
+        @media (min-width: $md) {
+          padding: gap(6) gap(3);
+        }
+      }
     }
   }
 }
