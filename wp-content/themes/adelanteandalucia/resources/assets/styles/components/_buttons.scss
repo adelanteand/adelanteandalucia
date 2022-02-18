@@ -24,6 +24,8 @@
   }
 
   &:hover {
+    text-decoration: none;
+
     svg {
       animation: hover 0.5s linear;
     }

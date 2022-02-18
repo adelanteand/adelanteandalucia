@@ -2,7 +2,7 @@
   Title: AA: Intro
   Description: Bloque introducción con imagen y textos
   Category: layout
-  Icon: feedback
+  Icon: admin-site
   Mode: preview
   SupportsAlign: false
   SupportsMode: false

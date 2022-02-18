@@ -137,6 +137,7 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
     return [
         'acf/intro',
         'acf/cta',
+        'acf/latest-posts',
         'acf/base',
         'core/paragraph',
         'core/heading',
@@ -149,3 +150,5 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
         'core/html'
     ];
 });
+
+add_filter('excerpt_length', function() { return 20; }, 10);
