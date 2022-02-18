@@ -1,0 +1,56 @@
+.c-cta {
+  @media (min-width: $md) {
+    @include container;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    @media (min-width: $md) {
+      display: flex;
+    }
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-dark);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 75%;
+  }
+
+  &__title {
+    color: var(--white);
+    margin: 0;
+    padding: gap(8) gap(8) gap(12) gap(8);
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $md) {
+      padding: gap(8);
+    }
+  }
+
+  &__text {
+    @include inset-margins;
+
+    background-color: var(--primary);
+    color: var(--white);
+    padding: gap(4) gap(8) gap(8) gap(8);
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $md) {
+      padding: gap(8);
+    }
+  }
+}
