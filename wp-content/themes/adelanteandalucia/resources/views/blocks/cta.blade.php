@@ -2,7 +2,7 @@
   Title: AA: Banner
   Description: Banner con imagen, titular, texto y enlace
   Category: layout
-  Icon: feedback
+  Icon: star-filled
   Mode: preview
   SupportsAlign: false
   SupportsMode: false
@@ -17,7 +17,9 @@
     </picture>
     <h2 class="c-cta__title c-title-2">{{ get_field('title') }}</h2>
     <div class="c-cta__text">
-      <p>{!! get_field("text") !!}</p>
+      @svg('deco.svg', 'c-cta__shape')
+      @svg('deco-d.svg', 'c-cta__shape c-cta__shape--d')
+      {!! get_field("text") !!}
       @if (get_field('button'))
         <p>
           <a target="{{ get_field('button')['target'] }}" href="{{  get_field('button')['url']  }}" class="c-button">
