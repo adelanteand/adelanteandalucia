@@ -17,6 +17,14 @@
     }
   }
 
+  &:hover {
+    text-decoration: none;
+
+    svg {
+      animation: hover 0.5s linear;
+    }
+  }
+
   &--alt {
     color: var(--primary);
 
@@ -27,11 +35,15 @@
     }
   }
 
-  &:hover {
-    text-decoration: none;
+  &--primary {
+    padding: gap(3) gap(4);
+    color: var(--primary--dark);
+    background-color: var(--primary);
 
     svg {
-      animation: hover 0.5s linear;
+      path {
+        fill: var(--primary--dark);
+      }
     }
   }
 }

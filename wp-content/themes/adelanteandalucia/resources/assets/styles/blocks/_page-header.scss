@@ -1,0 +1,33 @@
+.c-page-header {
+  text-align: center;
+  padding-bottom: gap(4);
+  position: relative;
+
+  &__title {
+    margin: 0 0 gap(4) 0;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @include inset-margins;
+
+    margin: gap(4) 0;
+    font-weight: bold;
+  }
+
+  .c-button {
+    margin-bottom: gap(4);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: gap(1);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-dark);
+    width: gap(20);
+  }
+}
