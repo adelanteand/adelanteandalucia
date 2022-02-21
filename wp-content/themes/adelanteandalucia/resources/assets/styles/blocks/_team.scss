@@ -1,0 +1,117 @@
+.c-team {
+  $this: &;
+
+  @media (min-width: $sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: gap(6) gap(4);
+  }
+
+  @media (min-width: $md) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: gap(10) gap(4);
+  }
+
+  &__member {
+    margin-bottom: gap(8);
+
+    @media (min-width: $sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__photo {
+    display: block;
+    aspect-ratio: 4 / 3;
+    max-width: calc(100% + #{gap(4)});
+    width: calc(100% + #{gap(4)});
+    margin-left: gap(-2);
+    object-fit: cover;
+    transition: transform 0.2s linear;
+    margin-bottom: gap(3);
+
+    @media (min-width: $sm) {
+      aspect-ratio: 1 / 1;
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @media (min-width: $md) {
+      aspect-ratio: auto;
+    }
+  }
+
+  &__link {
+    display: block;
+    overflow: hidden;
+    max-width: calc(100% + #{gap(4)});
+    width: calc(100% + #{gap(4)});
+    margin-left: gap(-2);
+    margin-bottom: gap(3);
+
+    @media (min-width: $sm) {
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    #{$this} {
+      &__photo {
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+
+    &:hover {
+      #{$this} {
+        &__photo {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  &__links {
+    margin-top: gap(-6);
+    margin-bottom: gap(3);
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    height: gap(6);
+  }
+
+  &__button {
+    background-color: var(--primary);
+    width: gap(6);
+    height: gap(6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: gap(1);
+  }
+
+  &__name {
+    margin: 0 0 gap(2) 0;
+
+    a {
+      color: var(--primary-dark);
+
+      &:hover {
+        color: var(--primary);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__position {
+    @include body-text-2;
+
+    text-transform: uppercase;
+    border-left: 4px solid var(--primary);
+    padding-left: gap(2);
+    line-height: 1;
+    margin: 0;
+  }
+}

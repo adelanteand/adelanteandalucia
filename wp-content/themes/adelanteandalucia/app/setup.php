@@ -74,6 +74,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
     add_image_size('huge', 2700, 2700, false);
     add_image_size('cropped', 640, 460, true);
+    add_image_size('cropped-v', 460, 640, true);
 
     /**
      * Enable HTML5 markup support
