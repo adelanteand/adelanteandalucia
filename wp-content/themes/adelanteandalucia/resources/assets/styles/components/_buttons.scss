@@ -11,6 +11,10 @@
 
   svg {
     margin-right: gap(1);
+
+    path {
+      fill: var(--primary-dark);
+    }
   }
 
   &--alt {

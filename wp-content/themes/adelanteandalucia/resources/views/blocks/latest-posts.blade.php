@@ -25,8 +25,6 @@
     @endphp
     @while($latest->have_posts()) @php $latest->the_post() @endphp
       @include('partials.content-latest-post')
-      @include('partials.content-latest-post')
-      @include('partials.content-latest-post')
     @endwhile
     @php wp_reset_postdata(); @endphp
   </div>

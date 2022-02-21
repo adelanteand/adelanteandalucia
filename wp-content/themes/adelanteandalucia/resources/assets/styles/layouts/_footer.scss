@@ -1,0 +1,100 @@
+.c-footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: gap(6) 0;
+  border-top: gap(1) solid var(--primary);
+
+  @media (min-width: $md) {
+    padding: gap(8) 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 150px;
+    margin: 0 0 gap(6) 0;
+  }
+
+  &__social {
+    display: flex;
+    margin: 0 0 gap(6) 0;
+
+    @media (min-width: $md) {
+      order: 3;
+    }
+
+    a {
+      margin-right: gap(2);
+
+      svg {
+        path {
+          transition: $transition-standard;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    margin: 0 0 gap(6) 0;
+    padding: 0;
+    list-style: none;
+
+    .menu-item {
+      a {
+        color: var(--white);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: gap(3);
+          height: gap(3);
+          background: url("../../images/icon-chevron-right.svg") no-repeat center;
+          margin-right: gap(1);
+        }
+
+        &:hover {
+          color: var(--primary);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__text {
+    @include body-text-2;
+    @include inset-margins;
+
+    @media (min-width: $md) {
+      order: 4;
+      flex: 0 0 100%;
+      width: 100%;
+      margin-top: gap(8);
+    }
+
+    a {
+      color: var(--white);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--primary);
+        text-decoration: none;
+      }
+    }
+  }
+}
