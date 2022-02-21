@@ -140,6 +140,7 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
         'acf/latest-posts',
         'acf/page-header',
         'acf/team',
+        'acf/member',
         'acf/base',
         'core/paragraph',
         'core/heading',

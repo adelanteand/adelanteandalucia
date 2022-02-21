@@ -1,0 +1,55 @@
+.c-member {
+  @media (min-width: $sm) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &:first-child {
+    margin-top: gap(6);
+
+    @media (min-width: $sm) {
+      margin-top: gap(8);
+    }
+  }
+
+  &__info {
+    @media (min-width: $sm) {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
+
+  &__content {
+    @media (min-width: $sm) {
+      flex: 1 1 60%;
+      max-width: 60%;
+      padding-left: gap(4);
+    }
+  }
+
+  &__position {
+    @media (min-width: $md) {
+      margin-bottom: gap(4);
+    }
+  }
+
+  &__back {
+    margin: 0 0 gap(6) auto;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: $sm) {
+      display: none;
+    }
+
+    &--d {
+      display: none;
+
+      @media (min-width: $sm) {
+        display: flex;
+      }
+    }
+  }
+}

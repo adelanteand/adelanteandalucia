@@ -90,6 +90,10 @@
     align-items: center;
     justify-content: center;
     margin-right: gap(1);
+
+    &:hover {
+      transform: translateY(gap(-1));
+    }
   }
 
   &__name {
