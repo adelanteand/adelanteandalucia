@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-20 07:30:00+0000\n"
+"PO-Revision-Date: 2022-02-13 06:51:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,16 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: includes/integration.php:14
+msgid "Spam protection"
+msgstr "Protección contra spam"
+
+#. translators: Developer debugging message. 1: PHP function name, 2:
+#. Explanatory message, 3: Contact Form 7 version number.
+#: includes/functions.php:607
+msgid "Function %1$s was called incorrectly. %2$s %3$s"
+msgstr "Se ha llamado a la función %1$s incorrectamente. %2$s %3$s"
 
 #. translators: 1: blog name, 2: confirmation link
 #: modules/constant-contact/doi.php:76 modules/sendinblue/doi.php:84
@@ -35,7 +45,7 @@ msgstr ""
 "\n"
 "%2$s\n"
 "\n"
-"Si no era tu intención o si no tienes idea de por qué has recibido este mensaje, por favor, no has clic en el enlace e ignora este mensaje. Nunca recopilaremos ni usaremos tus datos personales sin tu consentimiento explícito.\n"
+"Si no era tu intención o si no tienes idea de por qué has recibido este mensaje, por favor, no hagas clic en el enlace e ignora este mensaje. Nunca recopilaremos ni usaremos tus datos personales sin tu consentimiento explícito.\n"
 "\n"
 "Atentamente,\n"
 "%1$s"
@@ -49,19 +59,19 @@ msgstr "Confirmación de aceptación de %s"
 msgid "You can set up the Constant Contact integration here. For details, see %s."
 msgstr "Aquí puedes configurar la integración con Constant Contact. Para más detalles mira la %s."
 
-#: modules/stripe/stripe.php:312
+#: modules/stripe/stripe.php:308
 msgid "Complete payment"
 msgstr "Completar el pago"
 
-#: modules/stripe/stripe.php:297
+#: modules/stripe/stripe.php:293
 msgid "Proceed to checkout"
 msgstr "Proceder al pago"
 
-#: modules/stripe/stripe.php:185
+#: modules/stripe/stripe.php:181
 msgid "Payment is required. Please pay by credit card."
 msgstr "El pago es obligatorio. Por favor, paga con tarjeta de crédito."
 
-#: modules/stripe/stripe.php:20
+#: includes/integration.php:16
 msgid "Payments"
 msgstr "Pagos"
 
@@ -294,12 +304,6 @@ msgstr "Se usan palabras no permitidas."
 msgid "Not Found"
 msgstr "No encontrado"
 
-#. translators: Developer debugging message. 1: PHP function name, 2:
-#. Explanatory message, 3: Contact Form 7 version number.
-#: includes/functions.php:607
-msgid "%1$s was called incorrectly. %2$s %3$s"
-msgstr "Se ha llamado a %1$s incorrectamente. %2$s %3$s"
-
 #. translators: %s: Contact Form 7 version number.
 #: includes/functions.php:599
 msgid "(This message was added in Contact Form 7 version %s.)"
@@ -334,7 +338,7 @@ msgstr "%1$s y %2$s"
 msgid "Additional settings"
 msgstr "Ajustes adicionales"
 
-#: modules/constant-contact/service.php:311 modules/recaptcha/recaptcha.php:444
+#: modules/constant-contact/service.php:311 modules/recaptcha/recaptcha.php:440
 #: modules/sendinblue/service.php:125 modules/sendinblue/service.php:133
 #: modules/stripe/service.php:142
 msgid "Error"
@@ -348,11 +352,11 @@ msgstr "El tamaño total de los archivos adjuntos es demasiado grande."
 msgid "Unavailable HTML elements are used in the form template."
 msgstr "Los elementos HTML no disponibles se usan en la plantilla del formulario."
 
-#: modules/recaptcha/recaptcha.php:466
+#: modules/recaptcha/recaptcha.php:462
 msgid "reCAPTCHA is active on this site."
 msgstr "reCAPTCHA está activo en este sitio."
 
-#: modules/recaptcha/recaptcha.php:123
+#: modules/recaptcha/recaptcha.php:119
 msgid "reCAPTCHA response token is empty."
 msgstr "El token de respuesta de reCAPTCHA está vacío."
 
@@ -364,7 +368,7 @@ msgstr "El nonce enviado no es válido."
 msgid "User-Agent string is unnaturally short."
 msgstr "La cadena del agente de usuario es extrañamente corta."
 
-#: modules/recaptcha/recaptcha.php:129
+#: modules/recaptcha/recaptcha.php:125
 msgid "reCAPTCHA score (%1$.2f) is lower than the threshold (%2$.2f)."
 msgstr "La puntuación de reCAPTCHA (%1$.2f) es inferior al umbral (%2$.2f)."
 
@@ -398,19 +402,19 @@ msgstr "Conexión establecida."
 msgid "HTTP Response: %1$s %2$s %3$s from %4$s"
 msgstr "Respuesta HTTP: %1$s %2$s %3$s desde %4$s"
 
-#: modules/recaptcha/recaptcha.php:537 modules/stripe/service.php:249
+#: modules/recaptcha/recaptcha.php:533 modules/stripe/service.php:249
 msgid "Save Changes"
 msgstr "Guardar los cambios"
 
-#: modules/recaptcha/recaptcha.php:456
+#: modules/recaptcha/recaptcha.php:452
 msgid "reCAPTCHA protects you against spam and other types of automated abuse. With Contact Form 7&#8217;s reCAPTCHA integration module, you can block abusive form submissions by spam bots. For details, see %s."
 msgstr "reCapTCHA protege contra el spam y otros tipos de abuso automatizados. Con el módulo de integración de reCAPTCHA, puedes bloquear envíos de forma abusiva por bots de spam. Para más detalles, consulta %s."
 
-#: modules/recaptcha/recaptcha.php:201 modules/recaptcha/recaptcha.php:459
+#: modules/recaptcha/recaptcha.php:197 modules/recaptcha/recaptcha.php:455
 msgid "reCAPTCHA (v3)"
 msgstr "reCAPTCHA (v3)"
 
-#: modules/recaptcha/recaptcha.php:198
+#: modules/recaptcha/recaptcha.php:194
 msgid "API keys for reCAPTCHA v3 are different from those for v2; keys for v2 don&#8217;t work with the v3 API. You need to register your sites again to get new keys for v3. For details, see %s."
 msgstr "Las claves para la API de reCAPTCHA v3 son diferentes a las de la v2; las claves para la v2 no funcionan con la API de la v3. Tienes que registrar tus sitios nuevamente para obtener nuevas claves para la v3. Para más detalles, consulta %s."
 
@@ -418,7 +422,7 @@ msgstr "Las claves para la API de reCAPTCHA v3 son diferentes a las de la v2; la
 msgid "Connect to the Constant Contact API"
 msgstr "Conectar con la API de Constant Contact"
 
-#: modules/recaptcha/recaptcha.php:532 modules/stripe/service.php:245
+#: modules/recaptcha/recaptcha.php:528 modules/stripe/service.php:245
 msgctxt "API keys"
 msgid "Remove Keys"
 msgstr "Eliminar las claves"
@@ -439,7 +443,7 @@ msgstr "Clave secreta de la aplicación"
 msgid "API Key"
 msgstr "Clave de la API"
 
-#: modules/constant-contact/service.php:349 modules/recaptcha/recaptcha.php:476
+#: modules/constant-contact/service.php:349 modules/recaptcha/recaptcha.php:472
 #: modules/stripe/service.php:179
 msgid "Setup Integration"
 msgstr "Configurar la integración"
@@ -466,7 +470,7 @@ msgstr "El módulo de integración con Constant Contact te permite enviar los da
 msgid "Constant Contact"
 msgstr "Constant Contact"
 
-#: modules/constant-contact/constant-contact.php:22
+#: includes/integration.php:15
 msgid "Email marketing"
 msgstr "Marketing por correo electrónico"
 
@@ -687,13 +691,11 @@ msgstr "%d errores de configuración detectados"
 msgid "1 configuration error detected"
 msgstr "1 error de configuración detectado"
 
-#. translators: 1: PHP function name, 2: version number, 3: alternative
-#. function name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: includes/functions.php:537 includes/functions.php:574
-msgid "%1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s! Use %3$s instead."
-msgstr "¡%1$s es <strong>obsoleto</strong> desde la versión %2$s de Contact Form 7! Utiliza %3$s en su lugar."
+#: includes/functions.php:574
+msgid "Hook %1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s! Use %3$s instead."
+msgstr "¡El gancho %1$s está <strong>obsoleto</strong> desde la versión %2$s de Contact Form 7! Usa %3$s en su lugar."
 
 #: admin/includes/welcome-panel.php:126
 msgid "Flamingo"
@@ -872,30 +874,30 @@ msgid "You are not allowed to validate configuration."
 msgstr "No tienes permiso para validar la configuración."
 
 #: admin/includes/welcome-panel.php:64 admin/includes/welcome-panel.php:164
-#: modules/recaptcha/recaptcha.php:200 modules/recaptcha/recaptcha.php:458
+#: modules/recaptcha/recaptcha.php:196 modules/recaptcha/recaptcha.php:454
 msgid "https://contactform7.com/recaptcha/"
 msgstr "https://contactform7.com/recaptcha/"
 
-#: modules/recaptcha/recaptcha.php:508 modules/stripe/service.php:224
+#: modules/recaptcha/recaptcha.php:504 modules/stripe/service.php:224
 msgid "Secret Key"
 msgstr "Clave secreta"
 
-#: modules/recaptcha/recaptcha.php:491
+#: modules/recaptcha/recaptcha.php:487
 msgid "Site Key"
 msgstr "Clave del sitio"
 
-#: modules/recaptcha/recaptcha.php:450 modules/sendinblue/service.php:141
+#: modules/recaptcha/recaptcha.php:446 modules/sendinblue/service.php:141
 #: modules/stripe/service.php:150
 msgid "Settings saved."
 msgstr "Ajustes guardados."
 
-#: modules/recaptcha/recaptcha.php:445 modules/sendinblue/service.php:134
+#: modules/recaptcha/recaptcha.php:441 modules/sendinblue/service.php:134
 #: modules/stripe/service.php:143
 msgid "Invalid key values."
 msgstr "Valores de clave no válidos."
 
 #: admin/includes/welcome-panel.php:65 admin/includes/welcome-panel.php:165
-#: modules/recaptcha/recaptcha.php:234
+#: modules/recaptcha/recaptcha.php:230
 msgid "reCAPTCHA"
 msgstr "reCAPTCHA"
 
@@ -1289,7 +1291,7 @@ msgstr "Genera etiquetas de formulario para una imagen CAPTCHA y el campo de ent
 msgid "To use CAPTCHA, you first need to install and activate %s plugin."
 msgstr "Para usar CAPTCHA, primero tienes que instalar y activar el plugin %s."
 
-#: modules/really-simple-captcha.php:283 modules/recaptcha/recaptcha.php:9
+#: modules/really-simple-captcha.php:283
 msgid "CAPTCHA"
 msgstr "CAPTCHA"
 
