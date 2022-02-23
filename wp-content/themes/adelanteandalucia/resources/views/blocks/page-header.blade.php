@@ -9,7 +9,7 @@
   SupportsAnchor: true
   SupportsMultiple: true
 --}}
-<section id="{{ $block['anchor'] }}" class="c-page-header o-section">
+<section id="{{ $block['anchor'] }}" class="c-page-header o-section o-section--header">
   <h1 class="c-page-header__title c-title-1">{{ get_field('title') }}</h1>
   @if (get_field('subtitle'))
     <div class="c-page-header__subtitle">{!! get_field('subtitle') !!}</div>

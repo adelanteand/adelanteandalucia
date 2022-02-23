@@ -6,4 +6,41 @@
   > .alignwide {
     @include container;
   }
+
+  ul,
+  ol {
+    &:not(.alignwide):not(.alignfull):not(.wp-block-separator) {
+      padding-left: gap(4);
+      margin-top: gap(6);
+      margin-bottom: gap(6);
+
+      ::marker {
+        color: var(--primary);
+        font-weight: bold;
+        margin-right: gap(2);
+      }
+
+      li {
+        padding-left: gap(1);
+        margin-bottom: gap(2);
+      }
+    }
+  }
+
+  ul {
+    &:not(.alignwide):not(.alignfull):not(.wp-block-separator) {
+      list-style-type: square;
+    }
+  }
+
+  .wp-block-image {
+    margin-top: gap(6);
+    margin-bottom: gap(6);
+
+    figcaption {
+      @include body-text-2;
+
+      font-weight: bold;
+    }
+  }
 }

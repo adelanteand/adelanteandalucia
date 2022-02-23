@@ -6,6 +6,14 @@
     margin-top: gap(16);
     margin-bottom: gap(16);
   }
+
+  &--header {
+    margin-bottom: gap(6);
+
+    @media (min-width: $sm) {
+      margin-bottom: gap(8);
+    }
+  }
 }
 
 .c-section {

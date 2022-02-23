@@ -147,6 +147,7 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
         'core/heading',
         'core/list',
         'core/shortcode',
+        'core/image',
         'core/embed',
         'core/quote',
         'core/columns',
