@@ -141,6 +141,7 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
         'acf/page-header',
         'acf/team',
         'acf/member',
+        'acf/grid-links',
         'acf/base',
         'core/paragraph',
         'core/heading',

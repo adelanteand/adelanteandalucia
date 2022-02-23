@@ -1,0 +1,75 @@
+.c-grid-links {
+  $this: &;
+
+  &__wrapper {
+    width: calc(100% + gap(4));
+    margin-left: gap(-2);
+    display: grid;
+    grid-gap: gap(3);
+
+    @media (min-width: $xs) {
+      grid-gap: gap(4);
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+  }
+
+  &__link {
+    background-color: var(--primary-dark);
+    position: relative;
+
+    &:hover {
+      background-color: var(--primary);
+
+      #{$this} {
+        &__icon {
+          path {
+            fill: var(--white);
+          }
+        }
+
+        &__pretitle {
+          color: var(--white);
+        }
+      }
+    }
+  }
+
+  &__image {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    opacity: 10%;
+    display: block;
+  }
+
+  &__title {
+    @extend %c-title-6;
+
+    position: absolute;
+    top: gap(4);
+    left: gap(4);
+    color: var(--white);
+    padding-right: gap(4);
+  }
+
+  &__pretitle {
+    @extend %c-title-4;
+
+    display: block;
+    margin-bottom: gap(2);
+    color: var(--primary);
+    transition: $transition-standard;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: gap(4);
+    right: gap(4);
+    width: gap(3);
+    height: gap(4);
+
+    path {
+      transition: $transition-standard;
+    }
+  }
+}

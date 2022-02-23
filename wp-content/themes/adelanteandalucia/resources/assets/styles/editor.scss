@@ -27,6 +27,7 @@ body .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
 .acf-block-preview {
   @import "components/buttons";
   @import "components/forms";
+  @import "components/texts";
 
   /* Gutenberg Blocks */
   @import "blocks/intro";
@@ -35,6 +36,7 @@ body .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
   @import "blocks/page-header";
   @import "blocks/team";
   @import "blocks/member";
+  @import "blocks/grid-links";
   @import "blocks/base";
 
   /** Utilities **/

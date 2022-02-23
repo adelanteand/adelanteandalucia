@@ -7,3 +7,37 @@
     margin-bottom: gap(16);
   }
 }
+
+.c-section {
+  &__title {
+    @extend %c-title-4;
+
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding-bottom: gap(6);
+    margin-bottom: gap(6);
+
+    @media (min-width: $md) {
+      padding-bottom: gap(9);
+      margin-bottom: gap(8);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: gap(1);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--primary-dark);
+      width: gap(10);
+
+      @media (min-width: $md) {
+        width: gap(20);
+      }
+    }
+  }
+}
