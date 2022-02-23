@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-11 06:52:50+0000\n"
+"PO-Revision-Date: 2022-01-26 04:56:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,6 +37,10 @@ msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-suppo
 #: classes/class-twenty-twenty-one-dark-mode.php:177
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "El modo oscuro es un ajuste del dispositivo. Si un visitante de tu sitio lo solicita, tu sitio se mostrará con un fondo oscuro y un texto claro. <a href=\"%s\">Aprende más sobre el modo oscuro.</a>"
+
+#: classes/class-twenty-twenty-one-dark-mode.php:181
+msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom corner of the page."
+msgstr "El modo oscuro también se puede activar y desactivar con un botón que puedes encontrar en la esquina inferior de la página."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:380
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
