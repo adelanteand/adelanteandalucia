@@ -77,6 +77,10 @@ Do you have questions or issues with Contact Form 7? Use these support channels 
 
 For more information, see [Releases](https://contactform7.com/category/releases/).
 
+= 5.5.6 =
+
+[https://contactform7.com/contact-form-7-556/](https://contactform7.com/contact-form-7-556/)
+
 = 5.5.5 =
 
 [https://contactform7.com/contact-form-7-555/](https://contactform7.com/contact-form-7-555/)
