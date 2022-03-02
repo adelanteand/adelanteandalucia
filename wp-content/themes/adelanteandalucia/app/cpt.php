@@ -33,7 +33,7 @@ add_action('init', function () {
 
 add_action('init', function () {
     $args = array(
-        'label'                      => 'Área geográfica',
+        'label'                      => 'Territorio',
         'hierarchical'               => true,
         'public'                     => true,
         'query_var'                  => true,
@@ -43,7 +43,7 @@ add_action('init', function () {
         'show_in_rest'               => true,
         'show_tagcloud'              => false,
         'rewrite'                    => array(
-            'slug'                       => 'area',
+            'slug'                       => 'territorio',
             'with_front'                 => true,
             'hierarchical'               => false,
         )
