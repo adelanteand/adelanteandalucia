@@ -22,6 +22,8 @@
 @import "components/forms";
 @import "components/wp-classes";
 @import "components/texts";
+@import "components/posts-header";
+@import "components/pagination";
 @import "layouts/header";
 @import "layouts/content";
 @import "layouts/sidebar";
@@ -38,4 +40,5 @@
 @import "blocks/team";
 @import "blocks/member";
 @import "blocks/grid-links";
+@import "blocks/links";
 @import "blocks/base";

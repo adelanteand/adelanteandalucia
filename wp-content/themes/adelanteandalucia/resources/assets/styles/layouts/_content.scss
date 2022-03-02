@@ -45,14 +45,35 @@
   }
 
   blockquote {
+    @extend %c-title-6;
+
     margin-top: gap(4);
     margin-bottom: gap(4);
-    padding-top: gap(2);
-    padding-bottom: gap(2);
-    padding-left: gap(4);
-    border-left: 4px solid $primary;
-    color: $primary;
+    text-align: center;
+    color: var(--primary-dark);
     font-weight: bold;
+    position: relative;
+    padding-bottom: gap(4);
+
+    &:not(.alignwide):not(.alignfull):not(.wp-block-separator) {
+      max-width: $container-px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: gap(1);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--primary-dark);
+      width: gap(10);
+
+      @media (min-width: $md) {
+        width: gap(20);
+      }
+    }
 
     p:first-child {
       margin-top: 0;
@@ -65,11 +86,9 @@
     cite {
       @include body-text-2;
 
-      font-style: italic;
-      font-weight: normal;
-      padding: 0;
-      margin: 0;
-      color: $black;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-style: normal;
     }
   }
 }

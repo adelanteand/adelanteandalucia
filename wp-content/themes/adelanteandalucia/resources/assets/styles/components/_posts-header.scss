@@ -1,0 +1,25 @@
+.c-posts-header {
+  text-align: center;
+
+  @media (min-width: $sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 0 0 gap(3) 0;
+
+    @media (min-width: $sm) {
+      margin: 0;
+    }
+  }
+
+  &__filter {
+    @media (min-width: $sm) {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
+}

@@ -45,6 +45,17 @@
         fill: var(--primary--dark);
       }
     }
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--primary-dark);
+
+      svg {
+        path {
+          fill: var(--white);
+        }
+      }
+    }
   }
 }
 

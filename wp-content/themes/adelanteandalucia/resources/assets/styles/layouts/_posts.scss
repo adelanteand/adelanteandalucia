@@ -1,0 +1,13 @@
+.c-post-tags {
+  @include body-text-2;
+
+  border-bottom: gap(0.5) solid var(--primary-dark);
+  padding-bottom: gap(2);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary);
+
+  span {
+    color: var(--primary-dark);
+  }
+}

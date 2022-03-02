@@ -33,19 +33,20 @@ add_action('init', function () {
 
 add_action('init', function () {
     $args = array(
-        'label'                      => 'Pais',
-        'hierarchical'               => false,
+        'label'                      => 'Área geográfica',
+        'hierarchical'               => true,
         'public'                     => true,
         'query_var'                  => true,
         'show_ui'                    => true,
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
+        'show_in_rest'               => true,
         'show_tagcloud'              => false,
         'rewrite'                    => array(
-            'slug'                       => 'pais',
+            'slug'                       => 'area',
             'with_front'                 => true,
             'hierarchical'               => false,
         )
     );
-    //register_taxonomy('un_country', array('un_media'), $args);
+    register_taxonomy('un_area', array('post'), $args);
 });

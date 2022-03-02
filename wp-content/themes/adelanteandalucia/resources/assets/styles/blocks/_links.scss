@@ -1,0 +1,10 @@
+.c-links {
+  &__wrapper {
+    display: grid;
+    grid-gap: gap(4);
+
+    &--2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

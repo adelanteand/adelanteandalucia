@@ -1,11 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
+  <section class="c-content">
+    <header class="c-posts-header alignwide o-section">
+      <h1 class="c-posts-header__title c-title-3">{!! App::title() !!}</h1>
 
-  @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
-  @endwhile
+      @if (is_tax() || is_home())
+        @php
+          $areas = get_terms(['taxonomy' => 'un_area', 'orderby' => 'term_id', 'hide_empty' => false]);
+        @endphp
+        <div class="c-select c-posts-header__filter">
+          <select name="" id="" class="js-filter">
+            @foreach ($areas as $area)
+            <option value="{{ get_term_link($area) }}" {{ get_queried_object()->term_id==$area->term_id ? 'selected' : ''
+              }}>{{ $area->name }}</option>
+            @endforeach
+          </select>
+        </div>
+      @endif
+    </header>
 
-  {!! get_the_posts_navigation() !!}
+    <div class="c-latest-posts alignwide">
+      @if (is_home() && is_array(get_option('sticky_posts')))
+        @php
+          $sticky = new WP_Query([
+            'post_type' => 'post',
+            'post__in' => get_option('sticky_posts'),
+            'posts_per_page' => 1,
+          ])
+        @endphp
+        @while ($sticky->have_posts()) @php $sticky->the_post() @endphp
+          @include('partials.content-featured')
+        @endwhile
+      @endif
+    @while (have_posts()) @php the_post() @endphp
+      @include('partials.content-latest-post')
+    @endwhile
+    </div>
+  </section>
+  {!! App\ungrynerd_pagination() !!}
 @endsection

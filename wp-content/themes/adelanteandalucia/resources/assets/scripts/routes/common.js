@@ -27,9 +27,17 @@ export default {
 
     return swiper;
   },
+  setupFilter: () => {
+    document.querySelectorAll('.js-filter').forEach(el => {
+      el.addEventListener('change', () => {
+        window.location = el.value;
+      })
+    })
+  },
   init() {
     // JavaScript to be fired on all pages
     this.setupSuperMenu();
+    this.setupFilter();
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

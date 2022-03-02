@@ -1,0 +1,30 @@
+.c-pagination {
+  @include container($container-small-px);
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: gap(5);
+  margin-bottom: gap(10);
+
+  @media (min-width: $md) {
+    margin-bottom: gap(15);
+  }
+
+  &__item {
+    font-size: rem(24px);
+    font-weight: bold;
+
+    .page-numbers {
+      color: var(--primary-dark);
+      padding: 0 gap(1);
+      display: block;
+      text-align: center;
+
+      &.current {
+        border-bottom: gap(0.5) solid var(--primary-dark);
+      }
+    }
+  }
+}
