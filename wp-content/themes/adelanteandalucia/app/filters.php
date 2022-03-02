@@ -153,6 +153,7 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
         'core/quote',
         'core/columns',
         'core/column',
+        'gravityforms/form',
         'core/html'
     ];
 });
