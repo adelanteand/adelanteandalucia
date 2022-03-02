@@ -159,11 +159,26 @@ add_filter('allowed_block_types', function ($allowed_blocks) {
 
 add_filter('excerpt_length', function() { return 20; }, 10);
 
-
 //exclude sticky from home blog query
 add_action('pre_get_posts', function($query) {
     if ($query->is_home() && $query->is_main_query()) {
         $query->set('post__not_in', [end(get_option('sticky_posts'))]);
     }
     $query->set('ignore_sticky_posts', true);
+});
+
+add_filter('get_the_archive_title', function ($title) {
+    if (is_category()) {
+        $title = single_cat_title('', false);
+    } elseif (is_tag()) {
+        $title = single_tag_title('', false);
+    } elseif (is_author()) {
+        $title = get_the_author();
+    } elseif (is_post_type_archive()) {
+        $title = post_type_archive_title('', false);
+    } elseif (is_tax()) {
+        $title = single_term_title('', false);
+    }
+
+    return $title;
 });

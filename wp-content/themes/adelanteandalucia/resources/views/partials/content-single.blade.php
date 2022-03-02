@@ -13,4 +13,22 @@
       {!! the_tags('<div class="c-post-tags"><span>' . __('Etiquetas: ', 'adelanteandalucia') . '</span>', ' / ', '</div>') !!}
     </div>
   </div>
+
+  @php
+  $related = new WP_Query(['post__not_in' => [$post->ID], 'posts_per_page' => 3, 'category__in' =>
+  wp_get_post_categories($post->ID)]);
+  @endphp
+  <div class="o-section o-container">
+    <header class="c-latest__header">
+      <h2 class="c-latest__title c-title-2">{{ __('Podría interesarte', 'adelanteandalucia') }}</h2>
+      <a href="{{ get_permalink(get_option('page_for_posts')) }}" class="c-latest__link c-button">
+        @svg('icon-chevron-right.svg') {{ __('Ir a actualidad', 'adelanteandalucia') }}
+      </a>
+    </header>
+    <section class="c-latest-posts">
+      @while ($related->have_posts()) @php $related->the_post() @endphp
+        @include('partials.content-latest-post')
+      @endwhile
+    </section>
+  </div>
 </article>

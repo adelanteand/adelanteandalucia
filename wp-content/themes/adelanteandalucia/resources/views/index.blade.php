@@ -11,12 +11,15 @@
         @endphp
         <div class="c-select c-posts-header__filter">
           <select name="" id="" class="js-filter">
+            <option value="{{ get_permalink(get_option('page_for_posts')) }}" {{ is_home() ? 'selected' : '' }}>{{ __('Todas', 'adelanteandalucia') }}</option>
             @foreach ($areas as $area)
             <option value="{{ get_term_link($area) }}" {{ get_queried_object()->term_id==$area->term_id ? 'selected' : ''
               }}>{{ $area->name }}</option>
             @endforeach
           </select>
         </div>
+      @else
+        <a class="c-button" href="{{ get_permalink(get_option('page_for_posts')) }}">{{ __('Volver a actualidad', 'adelanteandalucia') }}</a>
       @endif
     </header>
 
