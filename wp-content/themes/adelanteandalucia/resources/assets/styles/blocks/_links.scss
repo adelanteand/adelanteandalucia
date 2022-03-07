@@ -4,7 +4,9 @@
     grid-gap: gap(4);
 
     &--2 {
-      grid-template-columns: repeat(2, 1fr);
+      @media (min-width: $sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }

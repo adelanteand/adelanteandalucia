@@ -1,3 +1,4 @@
+/* stylelint-disable scss/at-extend-no-missing-placeholder */
 .acf-block-preview,
 .page-frontend {
   display: block;
@@ -24,6 +25,205 @@
       border-radius: 0;
       width: 100%;
       display: block;
+    }
+  }
+
+  .gform_wrapper.gravity-theme {
+    @extend .o-section;
+  }
+
+  .gform_wrapper.gravity-theme,
+  & {
+    .gform_submission_error {
+      @include body-text-2;
+
+      font-weight: bold;
+      text-align: center;
+      padding: gap(2);
+      color: var(--white);
+      background-color: var(--warning);
+    }
+
+    .validation_message {
+      @include body-text-2;
+
+      font-weight: bold;
+      text-align: right;
+      text-transform: uppercase;
+      color: var(--warning)
+    }
+
+    .gform_title {
+      @include th3;
+
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: gap(4);
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: gap(1);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--primary-dark);
+        width: gap(20);
+      }
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):not([type="file"]):not([type="submit"]),
+    textarea {
+      @include body-text;
+
+      appearance: none;
+      width: 100%;
+      background-color: rgba($primary-dark, 0.05);
+      border: 0;
+      box-shadow: 0;
+      padding: gap(2);
+      margin-bottom: gap(1);
+
+      @media (min-width: $md) {
+        padding: gap(2) gap(4);
+      }
+    }
+
+    .gfield_error {
+      input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):not([type="file"]):not([type="submit"]),
+      textarea {
+        border: 2px solid var(--warning);
+      }
+    }
+
+    .ginput_complex {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+
+      input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):not([type="file"]):not([type="submit"]),
+      textarea {
+        width: auto;
+        max-width: 100%;
+      }
+
+      .ginput_container_time {
+        flex-basis: min-content;
+        max-width: 96px;
+        min-width: 96px;
+
+        @media (min-width: $sm) {
+          max-width: 120px;
+          min-width: 120px;
+        }
+      }
+
+      .hour_minute_colon {
+        padding: 0 gap(1);
+      }
+
+      .gfield_time_ampm {
+        margin-left: gap(1);
+      }
+    }
+
+    input[type="file"] {
+      width: 100%;
+    }
+
+    .gfield {
+      margin-bottom: gap(2);
+
+      @media (min-width: $md) {
+        margin-bottom: gap(4);
+      }
+    }
+
+    label,
+    legend {
+      @include body-text-2;
+
+      text-transform: uppercase;
+      font-weight: bold;
+
+      .gfield_required {
+        margin-left: gap(0.5);
+        display: inline-block;
+        color: var(--warning);
+      }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      appearance: none;
+      width: gap(2);
+      height: gap(2);
+      border: 1px solid var(--primary-dark);
+      position: relative;
+      top: 2px;
+      margin-right: gap(1);
+
+      &:checked {
+        background-color: var(--primary);
+      }
+
+      + label {
+        @include body-text;
+
+        font-weight: normal;
+        text-transform: none;
+      }
+    }
+
+    input[type="radio"] {
+      border-radius: 100%;
+    }
+
+    input[type="submit"],
+    button {
+      @extend .c-button;
+      @extend .c-button--primary;
+    }
+
+    fieldset {
+      appearance: none;
+      padding: 0;
+      border: 0;
+    }
+
+    select {
+      @include body-text;
+
+      appearance: none;
+      background-color: rgba($primary-dark, 0.05);
+      border: 0;
+      box-shadow: 0;
+      padding: gap(2) gap(6) gap(2) gap(2);
+      background-image: url("../../images/icon-chevron-down.svg");
+      background-position: right gap(2) center;
+      background-repeat: no-repeat;
+      margin-bottom: gap(1);
+
+      @media (min-width: $md) {
+        padding: gap(2) gap(8) gap(2) gap(4);
+        background-position: right gap(4) center;
+      }
+
+      option {
+        @include body-text;
+
+        @media (prefers-color-scheme: dark) {
+          color: var(--white);
+        }
+      }
+    }
+
+    .gfield_description {
+      @include body-text-2;
+
+      margin-bottom: gap(2);
     }
   }
 }
