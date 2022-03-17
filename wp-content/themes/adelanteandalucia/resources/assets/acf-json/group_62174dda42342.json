@@ -22,6 +22,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_623341c152b38",
+            "label": "Subtítulo",
+            "name": "subtitle",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_62174df4afe98",
             "label": "Enlaces",
             "name": "links",
@@ -98,5 +117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645694705
+    "modified": 1647526348
 }

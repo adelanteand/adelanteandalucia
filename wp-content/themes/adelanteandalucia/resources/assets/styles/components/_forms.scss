@@ -25,6 +25,12 @@
       border-radius: 0;
       width: 100%;
       display: block;
+      background-image: none;
+
+      option {
+        background-color: $white;
+        color: $black;
+      }
     }
   }
 

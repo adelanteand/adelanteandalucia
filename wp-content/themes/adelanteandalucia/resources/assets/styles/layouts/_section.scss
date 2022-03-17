@@ -48,4 +48,17 @@
       }
     }
   }
+
+  &__subtitle {
+    margin-bottom: gap(6);
+    text-align: center;
+
+    @media (min-width: $md) {
+      margin-bottom: gap(8);
+    }
+
+    .c-section__title + & {
+      margin-top: gap(-3);
+    }
+  }
 }

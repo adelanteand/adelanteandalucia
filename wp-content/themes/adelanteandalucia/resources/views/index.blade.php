@@ -7,7 +7,7 @@
 
       @if (is_tax() || is_home())
         @php
-          $areas = get_terms(['taxonomy' => 'un_area', 'orderby' => 'term_id', 'hide_empty' => false]);
+          $areas = get_terms(['taxonomy' => 'un_area', 'orderby' => 'term_name', 'hide_empty' => false]);
         @endphp
         <div class="c-select c-posts-header__filter">
           <select name="" id="" class="js-filter">

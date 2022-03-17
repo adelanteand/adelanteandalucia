@@ -10,7 +10,12 @@ SupportsAnchor: true
 SupportsMultiple: true
 --}}
 <section id="{{ $block['anchor'] }}" class="c-links o-section alignwide">
-  <h2 class="c-section__title">{{ get_field('title') }}</h2>
+  @if (get_field('title'))
+    <h2 class="c-section__title">{{ get_field('title') }}</h2>
+  @endif
+  @if (get_field('subtitle'))
+    <div class="c-section__subtitle o-container o-container--small">{!! get_field('subtitle') !!}</div>
+  @endif
   <div class="c-links__wrapper c-links__wrapper--{{ get_field('columns') }}">
     @while (have_rows('links')) @php the_row() @endphp
       @if (get_sub_field('button'))
