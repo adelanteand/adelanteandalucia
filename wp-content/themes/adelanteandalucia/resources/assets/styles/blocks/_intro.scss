@@ -9,6 +9,11 @@
     object-fit: cover;
     height: 70vh;
     max-height: 600px;
+    object-position: right center;
+
+    @media (min-width: $md) {
+      object-position: center center;
+    }
   }
 
   &__wrapper {

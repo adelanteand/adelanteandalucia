@@ -23,6 +23,11 @@
         @svg('youtube.svg')
       </a>
       @endif
+      @if (get_field('telegram', 'option'))
+      <a href="{{ get_field('telegram', 'option') }}" target="_blank">
+        @svg('telegram.svg')
+      </a>
+      @endif
     </div>
 
     @if (has_nav_menu('footer_navigation'))
