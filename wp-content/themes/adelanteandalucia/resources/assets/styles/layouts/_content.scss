@@ -1,4 +1,14 @@
 .c-content {
+  margin-bottom: gap(12);
+
+  @media (min-width: $md) {
+    margin-bottom: gap(16);
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
   > *:not(.alignwide):not(.alignfull):not(.wp-block-separator) {
     @include container($container-small-px);
   }
