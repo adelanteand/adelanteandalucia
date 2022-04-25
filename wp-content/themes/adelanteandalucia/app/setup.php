@@ -64,7 +64,8 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Menú cabecera', 'sage'),
-        'footer_navigation' => __('Menú pie de página', 'sage')
+        'footer_navigation' => __('Menú pie de página', 'sage'),
+        'footer_navigation2' => __('Menú pie de página 2', 'sage')
     ]);
 
     /**

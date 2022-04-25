@@ -33,6 +33,9 @@
     @if (has_nav_menu('footer_navigation'))
       {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'c-footer__nav', 'container' => false]) !!}
     @endif
+    @if (has_nav_menu('footer_navigation2'))
+      {!! wp_nav_menu(['theme_location' => 'footer_navigation2', 'menu_class' => 'c-footer__nav', 'container' => false]) !!}
+    @endif
 
     <div class="c-footer__text">{!! get_field('footer_text', 'option') !!}</div>
   </div>
