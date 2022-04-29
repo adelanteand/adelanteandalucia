@@ -2,60 +2,101 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-02-22 08:36:15+0000\n"
+"PO-Revision-Date: 2022-04-19 08:33:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/3.0.0\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
 
-#: src/integrations/admin/import-integration.php:197
+#: src/services/health-check/ryte-check.php:48
+msgid "Ryte"
+msgstr "Ryte"
+
+#: src/services/health-check/postname-permalink-check.php:48
+msgid "Postname permalink"
+msgstr "Enlace permanente del nombre de la entrada"
+
+#: src/services/health-check/page-comments-check.php:48
+msgid "Page comments"
+msgstr "Comentarios de la página"
+
+#: src/services/health-check/links-table-check.php:48
+msgid "Links table"
+msgstr "Tabla de enlaces"
+
+#: src/services/health-check/curl-check.php:48
+msgid "cURL"
+msgstr "cURL"
+
+#: src/integrations/admin/import-integration.php:218
+msgid "If you already have saved AIOSEO 'Search Appearance' settings and the issue persists, please contact our support team so we can take a closer look."
+msgstr "Si ya habías guardado los ajustes de 'Apariencia en el buscador' de AIOSEO y el problema persiste, por favor, contacta con nuestro equipo de soporte para que podamos echar un vistazo más detallado."
+
+#: src/integrations/admin/import-integration.php:215
+msgid "If you have never saved any AIOSEO 'Search Appearance' settings, please do that first and run the import again."
+msgstr "Si nunca habías habías guardado los ajustes de 'Apariencia en el buscador' de AIOSEO, por favor, haz eso primero y ejecuta de nuevo el importador."
+
+#: src/integrations/admin/import-integration.php:212
+msgid "The AIOSEO import was cancelled because some AIOSEO data is missing. Please try and take the following steps to fix this:"
+msgstr "La importación de AIOSEO se canceló debido a que no están disponibles los datos de AIOSEO. Por favor, prueba a realizar los siguientes pasos para corregir esto:"
+
+#: src/exceptions/importing/aioseo-validation-exception.php:17
+msgid "The validation of the AIOSEO data structure has failed."
+msgstr "La validación de la estructura de datos de AIOSEO ha fallado."
+
+#. translators: %s expands to Wincher
+#: src/integrations/third-party/wincher.php:125
+msgid "Currently, the %s integration is not available for multisites."
+msgstr "Actualmente, la integración de %s no está disponible para multisitios."
+
+#: src/integrations/admin/import-integration.php:234
 msgid "Cleanup failed with the following error:"
 msgstr "La limpieza falló, con el siguiente error:"
 
-#: src/integrations/admin/import-integration.php:129
+#: src/integrations/admin/import-integration.php:118
 msgid "Note: These settings will overwrite the default settings of Yoast SEO."
 msgstr "Nota: Estos ajustes omitirán los ajustes por defecto de Yoast SEO."
 
-#: src/integrations/admin/import-integration.php:125
-#: src/integrations/admin/import-integration.php:135
+#: src/integrations/admin/import-integration.php:114
+#: src/integrations/admin/import-integration.php:124
 msgid "Note: This metadata will only be imported if there is no existing Yoast SEO metadata yet."
 msgstr "Nota: Estos datos meta solo se importarán si no hay todavía datos meta existentes de Yoast SEO."
 
-#: src/integrations/admin/import-integration.php:124
-#: src/integrations/admin/import-integration.php:134
+#: src/integrations/admin/import-integration.php:113
+#: src/integrations/admin/import-integration.php:123
 msgid "Post metadata (SEO titles, descriptions, etc.)"
 msgstr "Datos meta de entrada (títulos SEO, descripciones, etc.)"
 
 #. translators: %s: expands to the name of the plugin that is selected to be
 #. imported
-#: src/integrations/admin/import-integration.php:120
+#: src/integrations/admin/import-integration.php:109
 msgid "The import from %s includes:"
 msgstr "La importación desde %s incluye:"
 
-#: src/integrations/admin/import-integration.php:118
+#: src/integrations/admin/import-integration.php:107
 msgid "Once you're certain that your site is working properly with the imported data from another SEO plugin, you can clean up all the original data from that plugin."
 msgstr "Una vez que te asegures de que tu sitio está funcionando correctamente con los datos importados de otro plugin SEO puedes limpiar todos los datos originales de ese plugin."
 
-#: src/integrations/admin/import-integration.php:117
+#: src/integrations/admin/import-integration.php:106
 msgid "Please select an SEO plugin below to see what data can be imported."
 msgstr "Por favor, selecciona un plugin SEO de abajo para ver qué datos pueden importarse."
 
-#: src/integrations/admin/import-integration.php:116
+#: src/integrations/admin/import-integration.php:105
 msgid "Clean up"
 msgstr "Limpiar"
 
-#: src/integrations/admin/import-integration.php:109
+#: src/integrations/admin/import-integration.php:97
 msgid "After you've imported data from another SEO plugin, please make sure to clean up all the original data from that plugin. (step 5)"
 msgstr "Cuando hayas importado datos de otro plugin SEO, por favor, asegúrate de limpiar todos los datos originales de ese plugin. (Paso 5)"
 
-#: src/integrations/admin/import-integration.php:108
+#: src/integrations/admin/import-integration.php:96
 msgid "Note: "
 msgstr "Nota:"
 
-#: src/integrations/admin/import-integration.php:107
+#: src/integrations/admin/import-integration.php:95
 msgid "The cleanup can take a long time depending on your site's size."
 msgstr "La limpieza puede tardar mucho tiempo, dependiendo del tamaño de tu sitio."
 
@@ -63,19 +104,19 @@ msgstr "La limpieza puede tardar mucho tiempo, dependiendo del tamaño de tu sit
 msgid "Default tagline"
 msgstr "Descripción corta por defecto"
 
-#: src/integrations/admin/import-integration.php:199
+#: src/integrations/admin/import-integration.php:236
 msgid "Import failed with the following error:"
 msgstr "La importación falló con el siguiente error:"
 
-#: src/integrations/admin/import-integration.php:111
+#: src/integrations/admin/import-integration.php:99
 msgid "No data found from other SEO plugins."
 msgstr "No se han encontrado datos de otros plugins SEO."
 
-#: src/integrations/admin/import-integration.php:110
+#: src/integrations/admin/import-integration.php:98
 msgid "Select SEO plugin"
 msgstr "Seleccionar plugin SEO"
 
-#: src/integrations/admin/import-integration.php:106
+#: src/integrations/admin/import-integration.php:94
 msgid "The import can take a long time depending on your site's size."
 msgstr "La importación puede durar mucho tiempo dependiendo del tamaño de tu sitio."
 
@@ -88,7 +129,7 @@ msgid "Blog Post"
 msgstr "Entrada de blog"
 
 #. translators: %s: 'Wincher'
-#: src/integrations/third-party/wincher.php:53
+#: src/integrations/third-party/wincher.php:77
 msgid "The %s integration offers the option to track specific keyphrases and gain insights in their positions."
 msgstr "La integración con %s ofrece la opción de rastrear frases clave específicas y obtener estadísticas de su posicionamiento."
 
@@ -367,7 +408,7 @@ msgstr "Estadísticas"
 #. Translators: %1$s expands to an opening anchor tag for a link leading to the
 #. Premium installation page, %2$s expands to a closing anchor tag.
 #: src/presenters/admin/indexing-error-presenter.php:76
-#: src/presenters/admin/indexing-failed-notification-presenter.php:77
+#: src/presenters/admin/indexing-failed-notification-presenter.php:78
 msgid "Oops, something has gone wrong and we couldn't complete the optimization of your SEO data. Please make sure to activate your subscription in MyYoast by completing %1$sthese steps%2$s."
 msgstr "Vaya, algo ha ido mal y no hemos podido completar la optimización de tus datos SEO. Por favor, asegúrate de activar tu suscripción en MyYoast completando %1$sestos pasos%2$s."
 
@@ -562,12 +603,13 @@ msgid "Note: You can always choose to enable / disable them for your theme below
 msgstr "Nota: Siempre puedes elegir a continuación activarlas o desactivarlas para tu tema. Este ajuste no se aplicará a las migas de pan insertadas mediante un widget, un bloque o un shortcode."
 
 #. translators: %1$s expands to 'Yoast'.
-#: inc/health-check-curl-version.php:76
+#: src/services/health-check/curl-reports.php:44
 msgid "%1$s premium plugin updates work fine"
 msgstr "Las actualizaciones del plugin %1$s premium funcionan bien"
 
 #. translators: %1$s expands to 'Yoast'.
-#: inc/health-check-curl-version.php:33 inc/health-check-curl-version.php:56
+#: src/services/health-check/curl-reports.php:58
+#: src/services/health-check/curl-reports.php:90
 msgid "%1$s premium plugins cannot update"
 msgstr "No se puede actualizar el plugin %1$s premium"
 
@@ -584,7 +626,7 @@ msgstr "El término no se considera válido. WordPress ha dado la siguiente raz�
 msgid "The term could not be found."
 msgstr "No se ha podido encontrar el término."
 
-#: admin/class-yoast-form.php:967
+#: admin/class-yoast-form.php:971
 msgid "This feature has been disabled since subsites never send tracking data."
 msgstr "Esta característica ha sido desactivada, ya que los subsitios nunca envían datos de seguimiento."
 
@@ -645,12 +687,12 @@ msgid "The %s integration offers suggestions and insights for keywords related t
 msgstr "La integración con %s ofrece sugerencias y estadísticas de palabras clave relacionadas con la frase clave objetivo introducida."
 
 #. translators: %1$s expands to Yoast SEO
-#: admin/views/tabs/network/integrations.php:24
+#: admin/views/tabs/network/integrations.php:26
 msgid "This tab allows you to selectively disable %1$s integrations with third-party products for all sites in the network. By default all integrations are enabled, which allows site admins to choose for themselves if they want to toggle an integration on or off for their site. When you disable an integration here, site admins will not be able to use that integration at all."
 msgstr "Esta pestaña te permite desactivar selectivamente las integraciones de %1$s con productos de terceros en todos los sitios de la red. Por defecto todas las integraciones están activas, lo que permite a los administradores de sitios elegir por sí mismos si quieren activar o no una integración en su sitio. Cuando desactivas una integración aquí, los administradores de sitios no podrán usar esa integración."
 
 #. translators: %1$s expands to Yoast SEO
-#: admin/views/tabs/dashboard/integrations.php:26
+#: admin/views/tabs/dashboard/integrations.php:27
 msgid "%1$s can integrate with third parties products. You can enable or disable these integrations below."
 msgstr "%1$s puede integrarse con productos de terceros. Puedes activar o desactivar estas integraciones abajo."
 
@@ -688,13 +730,13 @@ msgid "Optimize SEO Data"
 msgstr "Optimizar datos de SEO"
 
 #: src/presenters/admin/indexing-error-presenter.php:71
-#: src/presenters/admin/indexing-failed-notification-presenter.php:71
+#: src/presenters/admin/indexing-failed-notification-presenter.php:72
 msgid "If the problem persists, please contact support."
 msgstr "Si persiste el problema, contacta con soporte, por favor."
 
 #. Translators: %1$s expands to an opening anchor tag for a link leading to the
 #. Yoast SEO tools page, %2$s expands to a closing anchor tag.
-#: src/presenters/admin/indexing-failed-notification-presenter.php:59
+#: src/presenters/admin/indexing-failed-notification-presenter.php:60
 msgid "Something has gone wrong and we couldn't complete the optimization of your SEO data. Please %1$sre-start the process%2$s."
 msgstr "Vaya, algo ha ido mal y no pudimos completar la optimización de tus datos de SEO. Por favor, %1$sreinicia el proceso.%2$s."
 
@@ -858,7 +900,7 @@ msgstr "¿Mostrar los ajustes SEO para %1$s?"
 
 #. translators: %1$s: Expands to 'Ryte', %2$s: Link start tag to the Yoast help
 #. center, %3$s: Link closing tag.
-#: inc/health-check-ryte.php:208
+#: src/services/health-check/ryte-reports.php:163
 msgid ""
 "As the indexability status of your website can only be fetched from %1$s every 15 seconds,\n"
 "\t\t\ta first step could be to wait at least 15 seconds and refresh the Site Health page. If that did not help,\n"
@@ -869,25 +911,25 @@ msgstr ""
 "\t\t\t%2$slee más sobre cómo diagnosticar la visibilidad en los motores de búsqueda%3$s."
 
 #. translators: %1$s: Expands to 'Ryte', %2$s: Expands to 'Yoast SEO'.
-#: inc/health-check-ryte.php:126
+#: src/services/health-check/ryte-reports.php:191
 msgid "%1$s offers a free indexability check for %2$s users. The request to %1$s to check whether your site can be found by search engines failed due to an error."
 msgstr "%1$s ofrece una comprobación gratuita de indexabilidad para los usuarios de %2$s. La petición a %1$s para que compruebe si tu sitio pueden encontrarlo los motores de búsqueda falló debido a un error."
 
 #. translators: 1: Link to the Yoast help center, 2: Link closing tag.
-#: inc/health-check-links-table-not-accessible.php:56
+#: src/services/health-check/links-table-reports.php:98
 msgid "%1$sFind out how to solve this problem on our help center%2$s."
 msgstr "%1$sDescubre cómo resolver este problema en nuestro centro de ayuda%2$s."
 
-#: inc/health-check-links-table-not-accessible.php:44
+#: src/services/health-check/links-table-reports.php:56
 msgid "The text link counter feature is not working as expected"
 msgstr "La característica del contador de enlaces a texto no está funcionando como es de esperar"
 
 #. translators: 1: Link to the Yoast SEO blog, 2: Link closing tag.
-#: inc/health-check-links-table-not-accessible.php:36
+#: src/services/health-check/links-table-reports.php:71
 msgid "The text link counter helps you improve your site structure. %1$sFind out how the text link counter can enhance your SEO%2$s."
 msgstr "El contador de enlaces a texto te ayuda a mejorar la estructura de tu sitio. %1$sDescubre cómo puede el contador de enlaces a texto mejorar tu SEO%2$s."
 
-#: inc/health-check-links-table-not-accessible.php:31
+#: src/services/health-check/links-table-reports.php:43
 msgid "The text link counter is working as expected"
 msgstr "El contador de enlaces a texto está funcionando como es de esperar"
 
@@ -908,13 +950,13 @@ msgstr "Hemos escrito un artículo sobre cómo %1$susar la puntuación de SEO y 
 msgid "%1$s adds several columns to this page."
 msgstr "%1$s añade varias columnas a esta página."
 
-#: admin/class-admin-init.php:409
+#: admin/class-admin-init.php:397
 msgid "I don't want this site to show in the search results."
 msgstr "No quiero que este sitio se muestre en los resultados de búsqueda."
 
 #. translators: 1: Link start tag to the WordPress Reading Settings page, 2:
 #. Link closing tag.
-#: admin/class-admin-init.php:404
+#: admin/class-admin-init.php:392
 msgid "If you want search engines to show this site in their results, you must %1$sgo to your Reading Settings%2$s and uncheck the box for Search Engine Visibility."
 msgstr "Si quieres que los motores de búsqueda muestren este sitio en sus resultados debes %1$sir a tus ajustes de lectura%2$s y desmarcar la casilla de visibilidad en los motores de búsqueda."
 
@@ -977,127 +1019,121 @@ msgstr "La variable %1$s de la API REST te da todos los metadatos que necesitas 
 msgid "REST API: Head endpoint"
 msgstr "API REST: Variable de cabecera"
 
-#: inc/health-check-curl-version.php:81
+#: src/services/health-check/curl-reports.php:46
 msgid "Great! You can activate your premium plugin(s) and receive updates."
 msgstr "¡Genial! Puedes activar tu(s) plugin(s) premium y recibir actualizaciones."
 
 #. translators: %1$s Emphasis open tag, %2$s: Emphasis close tag, %3$s Link
 #. start tag to the Yoast help center, %4$s Link closing tag, %5$s to Yoast
 #. SEO, %6$s to my.yoast.com.
-#: inc/health-check-curl-version.php:63
+#: src/services/health-check/curl-reports.php:104
 msgid "You can %1$snot%2$s activate your premium plugin(s) and receive updates because %5$s cannot connect to %6$s. The cause for this error is probably that the cURL software on your server is too old. Please contact your host and ask them to update it to at least version 7.34. %3$sRead more about cURL in our help center%4$s."
 msgstr "%1$sNo puedes%2$s activar tu(s) plugin(s) premium y recibir actualizaciones porque %5$s no puede conectar con %6$s. Probablemente, la causa de este error es que el software cURL de tu servidor es demasiado antiguo. Por favor, contacta con tu alojamiento y pídeles que lo actualice, al menos, a la versión 7.34. %3$sLee más sobre cURL en nuestro centro de ayuda%4$s."
 
 #. translators: %1$s Emphasis open tag, %2$s: Emphasis close tag, %3$s Link
 #. start tag to the Yoast help center, %4$s Link closing tag, %5$s to Yoast
 #. SEO, %6$s to my.yoast.com.
-#: inc/health-check-curl-version.php:40
+#: src/services/health-check/curl-reports.php:72
 msgid "You can %1$snot%2$s activate your premium plugin(s) and receive updates because %5$s cannot connect to %6$s. A common cause for not being able to connect is an out-of-date version of cURL, software used to connect to other servers. However, your cURL version seems fine. Please talk to your host and, if needed, the Yoast support team to figure out what is broken. %3$sRead more about cURL in our help center%4$s."
 msgstr "%1$sNo puedes%2$s activar tu(s) plugin(s) premium y recibir actualizaciones porque %5$s no puede conectar con %6$s. Una causa común para no poder conectar es una versión no actualizada de cURL, software usado para conectar con otros servidores. Sin embargo, tu versión de cURL parece estar bien. Por favor, habla con tu alojamiento y, si es necesario, con el equipo de soporte de Yoast para averiguar qué es lo que está mal. %3$sLee más sobre cURL en nuestro centro de ayuda%4$s."
 
 #. translators: %1$s: Opening tag of the link to the Yoast Ryte website, %2$s:
 #. Expands to 'Ryte', %3$s: Link closing tag.
-#: inc/health-check-ryte.php:253
+#: src/services/health-check/ryte-reports.php:227
 msgid "%1$sGo to %2$s to analyze your entire site%3$s"
 msgstr "%1$sVe a %2$s para analizar tu sitio completo%3$s"
 
 #. translators: %1$s: Expands to 'Ryte', %2$s: Expands to 'Yoast SEO'.
-#: inc/health-check-ryte.php:238
+#: src/services/health-check/ryte-reports.php:105
 msgid "%1$s offers a free indexability check for %2$s users, and it shows that your site can be found by search engines."
 msgstr "%1$s ofrece una comprobación gratuita de indexación para los usuarios de %2$s y muestra que tu sitio puede ser encontrado por los motores de búsqueda."
 
-#: inc/health-check-ryte.php:233
+#. translators: %1$s expands to 'Yoast'.
+#: src/services/health-check/ryte-reports.php:45
 msgid "Your site can be found by search engines"
 msgstr "Tu sitio puede ser encontrado por los motores de búsqueda"
 
 #. translators: %1$s: Expands to 'Ryte', %2$s: Expands to 'Yoast SEO'.
-#: inc/health-check-ryte.php:193
-msgid ""
-"%1$s offers a free indexability check for %2$s users and right now it has trouble determining\n"
-"\t\t\twhether search engines can find your site. This could have several (legitimate) reasons and\n"
-"\t\t\tis not a problem in itself. If this is a live site, it is recommended that you figure out why\n"
-"\t\t\tthe %1$s check failed."
-msgstr ""
-"%1$s ofrece una comprobación gratuita de indexación para los usuarios de %2$s y, en este momento, tiene problemas para determinar\n"
-"\t\t\tsi los motores de búsqueda pueden encontrar tu sitio. Esto podría ser por varios motivos (legítimos) y\n"
-"\t\t\tno es un problema por sí mismo. Si este es un sitio en vivo, se recomienda que averigües por qué\n"
-"\t\t\tha fallado la comprobación de %1$s."
+#: src/services/health-check/ryte-reports.php:147
+msgid "%1$s offers a free indexability check for %2$s users and right now it has trouble determining whether search engines can find your site. This could have several (legitimate) reasons and is not a problem in itself. If this is a live site, it is recommended that you figure out why the %1$s check failed."
+msgstr "%1$s ofrece una comprobación gratuita de indexación para los usuarios de %2$s y, en este momento, tiene problemas para determinar si los motores de búsqueda pueden encontrar tu sitio. Esto podría ser por varios motivos (legítimos) y no es un problema por sí mismo. Si este es un sitio en vivo, se recomienda que averigües por qué ha fallado la comprobación de %1$s."
 
 #. translators: %1$s: Expands to 'Ryte'.
-#: inc/health-check-ryte.php:186
+#: src/services/health-check/ryte-reports.php:75
 msgid "%1$s cannot determine whether your site can be found by search engines"
 msgstr "%1$s no puede determinar si tu sitio puede ser encontrado por los motores de búsqueda"
 
 #. translators: %1$s: Opening tag of the link to the Yoast help center, %2$s:
 #. Link closing tag.
-#: inc/health-check-ryte.php:169
+#: src/services/health-check/ryte-reports.php:133
 msgid "%1$sRead more about troubleshooting search engine visibility.%2$s"
 msgstr "%1$sLeer más sobre el diagnóstico de la visibilidad de los motores de búsqueda.%2$s"
 
 #. translators: %1$s: Expands to 'Ryte', %2$s: Expands to 'Yoast SEO'.
-#: inc/health-check-ryte.php:162
+#: src/services/health-check/ryte-reports.php:119
 msgid "%1$s offers a free indexability check for %2$s users and it has determined that your site cannot be found by search engines. If this site is live or about to become live, this should be fixed."
 msgstr "%1$s ofrece una comprobación gratuita de indexación para los usuarios de %2$s y ha determinado que tu sitio no puede ser encontrado por los motores de búsqueda. Si este sitio está en vivo o a punto de estarlo, esto debería ser corregido."
 
-#: inc/health-check-ryte.php:156
+#. translators: %1$s expands to 'Yoast'.
+#: src/services/health-check/ryte-reports.php:60
 msgid "Your site cannot be found by search engines"
 msgstr "Tu sitio no puede ser encontrado por los motores de búsqueda"
 
 #. translators: %1$s: Opening tag of the link to the Yoast help center, %2$s:
 #. Link closing tag.
-#: inc/health-check-ryte.php:141
+#: src/services/health-check/ryte-reports.php:213
 msgid "If this is a live site, %1$sit is recommended that you figure out why the check failed.%2$s"
 msgstr "Si este es un sitio en vivo, %1$sse recomienda que averigües por qué ha fallado la comprobación.%2$s"
 
 #. translators: 1: The Ryte response raw error code, if any. 2: The error
 #. message. 3: The WordPress error code, if any.
-#: inc/health-check-ryte.php:132
+#: src/services/health-check/ryte-reports.php:197
 msgid "Error details: %1$s %2$s %3$s"
 msgstr "Detalles del error: %1$s %2$s %3$s"
 
-#: inc/health-check-ryte.php:118
+#: src/services/health-check/ryte-reports.php:90
 msgid "An error occurred while checking whether your site can be found by search engines"
 msgstr "Ha ocurrido un error al comprobar si tu sitio puede ser encontrado por los motores de búsqueda"
 
 #. translators: 1: link open tag; 2: link close tag.
-#: src/services/health-check/default-tagline-report-builder.php:78
+#: src/services/health-check/default-tagline-reports.php:63
 msgid "%1$sYou can change the tagline in the customizer%2$s."
 msgstr "%1$sPuedes cambiar la descripción corta en el personalizador%2$s."
 
-#: src/services/health-check/default-tagline-report-builder.php:60
+#: src/services/health-check/default-tagline-reports.php:45
 msgid "You still have the default WordPress tagline. Even an empty one is probably better."
 msgstr "Aún tienes la descripción corta por defecto de WordPress. Incluso una en blanco es probablemente mejor."
 
-#: src/services/health-check/default-tagline-report-builder.php:58
+#: src/services/health-check/default-tagline-reports.php:43
 msgid "You should change the default WordPress tagline"
 msgstr "Deberías cambiar la descripción corta por defecto de WordPress"
 
-#: src/services/health-check/default-tagline-report-builder.php:47
+#: src/services/health-check/default-tagline-reports.php:32
 msgid "You are using a custom tagline or an empty one."
 msgstr "Estás utilizando una descripción corta personalizada o una vacía."
 
-#: src/services/health-check/default-tagline-report-builder.php:45
+#: src/services/health-check/default-tagline-reports.php:30
 msgid "You changed the default WordPress tagline"
 msgstr "Has cambiado la descripción corta por defecto de WordPress"
 
-#: inc/health-check-page-comments.php:28
+#: src/services/health-check/page-comments-reports.php:29
 msgid "Comments on your posts are displayed on a single page. This is just like we'd suggest it. You're doing well!"
 msgstr "Los comentarios de tus entradas se muestran en una página individual. Esto es tal como lo hemos sugerido. ¡Lo estás haciendo bien!"
 
 #. translators: %s expands to '/%postname%/'
-#: inc/health-check-postname-permalink.php:39
+#: src/services/health-check/postname-permalink-reports.php:55
 msgid "It's highly recommended to have your postname in the URL of your posts and pages. Consider setting your permalink structure to %s."
 msgstr "Es muy recomendable que tengas el nombre de la entrada en la URL de tus entradas y páginas. Considera ajustar la estructura de tus enlaces permanentes como %s."
 
-#: inc/health-check-postname-permalink.php:33
+#: src/services/health-check/postname-permalink-reports.php:40
 msgid "You do not have your postname in the URL of your posts and pages"
 msgstr "No tienes el nombre de la entrada en la URL de tus entradas y páginas"
 
-#: inc/health-check-postname-permalink.php:28
+#: src/services/health-check/postname-permalink-reports.php:29
 msgid "You do have your postname in the URL of your posts and pages."
 msgstr "Tienes el nombre de la entrada en la URL de tus entradas y páginas."
 
-#: inc/health-check-postname-permalink.php:25
+#: src/services/health-check/postname-permalink-reports.php:27
 msgid "Your permalink structure includes the post name"
 msgstr "Tu estructura de enlaces permanentes incluye el nombre de la entrada"
 
@@ -1105,15 +1141,15 @@ msgstr "Tu estructura de enlaces permanentes incluye el nombre de la entrada"
 msgid "The request to Ryte returned an error."
 msgstr "La petición a Ryte ha devuelto un error."
 
-#: inc/health-check-page-comments.php:35
+#: src/services/health-check/page-comments-reports.php:42
 msgid "Comments on your posts break into multiple pages. As this is not needed in 999 out of 1000 cases, we recommend you disable it. To fix this, uncheck \"Break comments into pages...\" on the Discussion Settings page."
 msgstr "Los comentarios de tus entradas se dividen en varias páginas. Como esto no es necesario en 999 de cada 1000 casos, recomendamos que lo desactives. Para corregir esto, desmarca «Separar comentarios en páginas...» en la página de ajustes de comentarios."
 
-#: inc/health-check-page-comments.php:32
+#: src/services/health-check/page-comments-reports.php:40
 msgid "Comments break into multiple pages"
 msgstr "Los comentarios se dividen en varias páginas"
 
-#: inc/health-check-page-comments.php:25
+#: src/services/health-check/page-comments-reports.php:27
 msgid "Comments are displayed on a single page"
 msgstr "Los comentarios se muestran en una sola página"
 
@@ -1123,13 +1159,13 @@ msgstr "Sin título"
 
 #. translators: 1: Start of a paragraph beginning with the Yoast icon, 2:
 #. Expands to 'Yoast SEO', 3: Paragraph closing tag.
-#: inc/health-check.php:209 src/services/health-check/report-builder.php:201
+#: src/services/health-check/report-builder.php:201
 msgid "%1$sThis was reported by the %2$s plugin%3$s"
 msgstr "%1$sEsto ha sido informado por el plugin %2$s%3$s"
 
 #. translators: 1: Opening tag of the link to the discussion settings page, 2:
 #. Link closing tag.
-#: inc/health-check-page-comments.php:38
+#: src/services/health-check/page-comments-reports.php:55
 msgid "%1$sGo to the Discussion Settings page%2$s"
 msgstr "%1$sIr a la página de ajustes de comentarios%2$s"
 
@@ -1493,7 +1529,7 @@ msgid "Keyphrase"
 msgstr "Frase clave"
 
 #. translators: 1: Yoast SEO.
-#: inc/health-check-links-table-not-accessible.php:50
+#: src/services/health-check/links-table-reports.php:85
 msgid "For this feature to work, %1$s needs to create a table in your database. We were unable to create this table automatically."
 msgstr "Para que esta característica funcione, %1$snecesita crear una tabla en tu base de datos. No pudimos crear esta tabla automáticamente."
 
@@ -1568,17 +1604,17 @@ msgstr "No mostrar los archivos de fecha en los resultados de búsqueda, técnic
 msgid "Upgrade to %s"
 msgstr "Actualizar a %s"
 
-#: admin/class-admin-init.php:361
+#: admin/class-admin-init.php:349
 msgid "Learn about why permalinks are important for SEO."
 msgstr "Aprende sobre por qué los enlaces permanentes son importantes para el SEO."
 
 #. translators: %1$s and %2$s expand to <em> items to emphasize the word in the
 #. middle.
-#: admin/class-admin-init.php:355
+#: admin/class-admin-init.php:343
 msgid "Changing your permalinks settings can seriously impact your search engine visibility. It should almost %1$s never %2$s be done on a live website."
 msgstr "Cambiar tus ajustes de enlaces permanentes puede impactar seriamente en tu visibilidad en los motores de búsqueda. No debería hacerse casi %1$s nunca %2$s en una web ya publicada."
 
-#: admin/class-admin-init.php:352
+#: admin/class-admin-init.php:340
 msgid "WARNING:"
 msgstr "ADVERTENCIA:"
 
@@ -1587,12 +1623,12 @@ msgid "Check Keyphrase Density"
 msgstr "Comprueba la densidad de la frase clave"
 
 #: admin/views/tabs/network/features.php:53
-#: admin/views/tabs/network/integrations.php:55
+#: admin/views/tabs/network/integrations.php:62
 msgid "Disable"
 msgstr "Desactivar"
 
 #: admin/views/tabs/network/features.php:52
-#: admin/views/tabs/network/integrations.php:54
+#: admin/views/tabs/network/integrations.php:61
 msgid "Allow Control"
 msgstr "Permitir control"
 
@@ -1601,7 +1637,7 @@ msgstr "Permitir control"
 msgid "This tab allows you to selectively disable %s features for all sites in the network. By default all features are enabled, which allows site admins to choose for themselves if they want to toggle a feature on or off for their site. When you disable a feature here, site admins will not be able to use that feature at all."
 msgstr "Esta pestaña te permite desactivar selectivamente características de %s en todos los sitios de la red. Por defecto están activas todas las características, lo que permite a los administradores del sitio elegir por sí mismos si quieren activar o desactivar una característica para su sitio. Cuando desactives aquí una característica los administradores del sitio no podrán usar esa característica."
 
-#: admin/views/sidebar.php:29 js/dist/externals-components.js:7
+#: admin/views/sidebar.php:29 js/dist/externals-components.js:11
 msgid "Rank better with synonyms & related keyphrases"
 msgstr "Posiciona mejor con sinónimos y frases clave relacionadas"
 
@@ -1610,7 +1646,7 @@ msgid "optimize a single post for synonyms and related keyphrases."
 msgstr "optimiza una entrada para sinónimos y frases clave relacionadas."
 
 #. translators: %s: argument name
-#: admin/views/class-yoast-feature-toggle.php:109
+#: admin/views/class-yoast-feature-toggle.php:126
 msgid "%s is a required feature toggle argument."
 msgstr "%s es un argumento obligatorio de activación de la característica."
 
@@ -1626,7 +1662,7 @@ msgstr "Quitar frase clave"
 msgid "Keyphrase:"
 msgstr "Frase clave:"
 
-#: admin/class-yoast-form.php:963
+#: admin/class-yoast-form.php:967
 msgid "This feature has been disabled by the network admin."
 msgstr "Esta característica la ha desactivado el administrador de la red."
 
@@ -1652,9 +1688,9 @@ msgstr "La frase clave objetivo no está establecida."
 #: src/deprecated/admin/add-keyword-modal.php:47
 #: src/deprecated/admin/keyword-synonyms-modal.php:47
 #: src/deprecated/admin/multiple-keywords-modal.php:47
-#: js/dist/externals-components.js:15 js/dist/externals-components.js:25
-#: js/dist/externals-components.js:27 js/dist/externals-components.js:29
+#: js/dist/externals-components.js:19 js/dist/externals-components.js:29
 #: js/dist/externals-components.js:31 js/dist/externals-components.js:33
+#: js/dist/externals-components.js:35 js/dist/externals-components.js:37
 msgid "Get %s"
 msgstr "Consigue %s"
 
@@ -1685,7 +1721,7 @@ msgstr "Bloques de %1$s de datos estructurados"
 #: src/deprecated/admin/add-keyword-modal.php:35
 #: src/deprecated/admin/keyword-synonyms-modal.php:35
 #: src/deprecated/admin/multiple-keywords-modal.php:35
-#: js/dist/externals-components.js:17
+#: js/dist/externals-components.js:21
 msgid "Great news: you can, with %s!"
 msgstr "Buenas noticias: ¡puedes, con %s!"
 
@@ -1750,7 +1786,7 @@ msgid "Not all required fields are given. Missing field %1$s"
 msgstr "No se dan todos los campos obligatorios. Falta el campo %1$s"
 
 #: src/deprecated/admin/keyword-synonyms-modal.php:32
-#: js/dist/externals-components.js:29
+#: js/dist/externals-components.js:33
 msgid "Would you like to add keyphrase synonyms?"
 msgstr "¿Te gustaría añadir sinónimos de la frase clave?"
 
@@ -2037,7 +2073,7 @@ msgid "%s data not found."
 msgstr "%s datos no encontrados."
 
 #: admin/class-premium-upsell-admin-block.php:58 admin/views/sidebar.php:38
-#: js/dist/externals-components.js:11 js/dist/externals-components.js:21
+#: js/dist/externals-components.js:15 js/dist/externals-components.js:25
 msgid "24/7 email support"
 msgstr "Soporte por correo electrónico 24/7"
 
@@ -2203,9 +2239,9 @@ msgstr "Puedes usar las cajas siguientes para verificar las distintas herramient
 msgid "Learn more about the Webmaster Tools verification"
 msgstr "Aprende más sobre la verificación en las herramientas para webmasters"
 
-#: admin/class-yoast-form.php:859 admin/class-yoast-form.php:899
+#: admin/class-yoast-form.php:863 admin/class-yoast-form.php:903
 #: admin/views/tabs/dashboard/features.php:68
-#: admin/views/tabs/dashboard/integrations.php:71
+#: admin/views/tabs/dashboard/integrations.php:87
 #: admin/views/tabs/metas/paper-content/author-archive-settings.php:13
 #: admin/views/tabs/metas/paper-content/date-archives-settings.php:13
 #: admin/views/tabs/metas/paper-content/taxonomy-content.php:19
@@ -2216,9 +2252,9 @@ msgstr "Activo"
 #. translators: %s expands to a feature's name
 #. translators: %s expands to an integration's name
 #: admin/views/tabs/dashboard/features.php:51
-#: admin/views/tabs/dashboard/integrations.php:54
+#: admin/views/tabs/dashboard/integrations.php:55
 #: admin/views/tabs/network/features.php:45
-#: admin/views/tabs/network/integrations.php:47
+#: admin/views/tabs/network/integrations.php:49
 msgid "Help on: %s"
 msgstr "Ayuda sobre: %s"
 
@@ -2227,10 +2263,10 @@ msgstr "Ayuda sobre: %s"
 msgid "%1$s comes with a lot of features. You can enable / disable some of them below. Clicking the question mark gives more information about the feature."
 msgstr "%1$s tiene un montón de características. Puedes activar / desactivar algunas de ellas a continuación. Al hacer clic en el signo de interrogación se muestra más información sobre la característica."
 
-#: admin/class-yoast-form.php:860 admin/class-yoast-form.php:900
+#: admin/class-yoast-form.php:864 admin/class-yoast-form.php:904
 #: admin/views/class-yoast-feature-toggles.php:150
 #: admin/views/tabs/dashboard/features.php:69
-#: admin/views/tabs/dashboard/integrations.php:72
+#: admin/views/tabs/dashboard/integrations.php:88
 #: admin/views/tabs/metas/paper-content/author-archive-settings.php:14
 #: admin/views/tabs/metas/paper-content/date-archives-settings.php:14
 #: admin/views/tabs/metas/paper-content/taxonomy-content.php:19
@@ -2306,7 +2342,7 @@ msgstr "Apariencia en el buscador"
 
 #. translators: %s expands to an indexable object's name, like a post type or
 #. taxonomy
-#: admin/class-yoast-form.php:870
+#: admin/class-yoast-form.php:874
 msgid "Show %s in search results?"
 msgstr "¿Mostramos %s en los resultados de búsqueda?"
 
@@ -2337,7 +2373,7 @@ msgstr "Lee más acerca de cómo funciona %s."
 #: admin/views/class-yoast-integration-toggles.php:78
 #: admin/views/class-yoast-integration-toggles.php:93
 #: admin/views/class-yoast-integration-toggles.php:110
-#: src/integrations/third-party/wincher.php:49
+#: src/integrations/third-party/wincher.php:73
 msgid "%s integration"
 msgstr "Integración con %s"
 
@@ -2374,7 +2410,7 @@ msgid "The SEO analysis offers suggestions to improve the SEO of your text."
 msgstr "El análisis SEO ofrece sugerencias para mejorar el SEO de tu texto."
 
 #: admin/views/class-yoast-feature-toggles.php:74
-#: js/dist/externals-components.js:33
+#: js/dist/externals-components.js:37
 msgid "SEO analysis"
 msgstr "Análisis SEO"
 
@@ -2580,18 +2616,18 @@ msgstr "Puntuación de legibilidad"
 #: src/deprecated/admin/add-keyword-modal.php:41
 #: src/deprecated/admin/keyword-synonyms-modal.php:41
 #: src/deprecated/admin/multiple-keywords-modal.php:41
-#: js/dist/externals-components.js:13 js/dist/externals-components.js:23
+#: js/dist/externals-components.js:17 js/dist/externals-components.js:27
 msgid "Other benefits of %s for you:"
 msgstr "Otros beneficios de %s para ti:"
 
 #: admin/filters/class-cornerstone-filter.php:87
 #: admin/views/class-yoast-feature-toggles.php:90
-#: js/dist/externals-components.js:1
+#: js/dist/externals-components.js:5
 msgid "Cornerstone content"
 msgstr "Contenido esencial"
 
 #: admin/class-premium-upsell-admin-block.php:56
-#: js/dist/externals-components.js:9 js/dist/externals-components.js:19
+#: js/dist/externals-components.js:13 js/dist/externals-components.js:23
 msgid "Superfast internal linking suggestions"
 msgstr "Sugerencias super rápidas sobre enlaces internos"
 
@@ -2604,7 +2640,7 @@ msgstr "Guardar cambios"
 #: src/deprecated/admin/add-keyword-modal.php:50
 #: src/deprecated/admin/keyword-synonyms-modal.php:50
 #: src/deprecated/admin/multiple-keywords-modal.php:50
-#: js/dist/externals-components.js:15 js/dist/externals-components.js:25
+#: js/dist/externals-components.js:19 js/dist/externals-components.js:29
 msgid "1 year free support and updates included!"
 msgstr "¡1 año de soporte y actualizaciones gratuitas incluido!"
 
@@ -2616,7 +2652,7 @@ msgid "The plugin %2$s changes your site's output and in doing that differentiat
 msgstr "El plugin %2$s cambia el código de tu sitio haciendo diferencias entre los motores de búsqueda y los usuarios normales, un proceso llamado cloaking. Recomendamos encarecidamente que lo desactives."
 
 #: admin/class-premium-upsell-admin-block.php:59 admin/views/sidebar.php:39
-#: js/dist/externals-components.js:11 js/dist/externals-components.js:21
+#: js/dist/externals-components.js:15 js/dist/externals-components.js:25
 msgid "No ads!"
 msgstr "¡Sin anuncios!"
 
@@ -2670,11 +2706,11 @@ msgid "%1$s, Author at %2$s"
 msgstr "%1$s, autor en %2$s"
 
 #: admin/formatter/class-metabox-formatter.php:200
-#: js/dist/externals/analysis.js:356 js/dist/externals/analysisReport.js:1
+#: js/dist/externals/analysis.js:357 js/dist/externals/analysisReport.js:1
 msgid "Marks are disabled in current view"
 msgstr "Las marcas están desactivadas en la vista actual"
 
-#: inc/class-wpseo-replace-vars.php:1475 js/dist/settings.js:6
+#: inc/class-wpseo-replace-vars.php:1475 js/dist/settings.js:10
 msgid "Name"
 msgstr "Nombre"
 
@@ -2735,7 +2771,7 @@ msgstr "%1$s puede comprobar a diario si tu sitio aún está indexado en los mot
 msgid "Features"
 msgstr "Características"
 
-#: admin/metabox/class-metabox.php:172 js/dist/externals/analysis.js:356
+#: admin/metabox/class-metabox.php:172 js/dist/externals/analysis.js:357
 #: js/dist/externals/replacementVariableEditor.js:1
 #: js/dist/externals/searchMetadataPreviews.js:2
 msgid "SEO title"
@@ -2993,7 +3029,7 @@ msgid "Removes the readability analysis section from the metabox and disables al
 msgstr "Quita la pestaña de legibilidad de la caja meta y desactiva todas las sugerencias relacionadas con la legibilidad."
 
 #: admin/views/class-yoast-feature-toggles.php:82
-#: js/dist/externals-components.js:1
+#: js/dist/externals-components.js:5
 msgid "Readability analysis"
 msgstr "Análisis de legibilidad"
 
@@ -3003,7 +3039,7 @@ msgstr "Análisis de legibilidad"
 #: inc/class-wpseo-rank.php:140 inc/class-wpseo-rank.php:163
 #: inc/class-wpseo-rank.php:195 js/dist/block-editor.js:1
 #: js/dist/block-editor.js:63 js/dist/editor-modules.js:1
-#: js/dist/externals-components.js:33 js/dist/externals/analysis.js:356
+#: js/dist/externals-components.js:1 js/dist/externals/analysis.js:357
 #: js/dist/post-edit.js:1 js/dist/term-edit.js:1
 msgid "Needs improvement"
 msgstr "Necesita mejorar"
@@ -3056,7 +3092,7 @@ msgstr "Escritorio"
 
 #. translators: %1$s is a link start tag to the permalink settings page, %2$s
 #. is the link closing tag.
-#: inc/health-check-postname-permalink.php:45
+#: src/services/health-check/postname-permalink-reports.php:68
 msgid "You can fix this on the %1$sPermalink settings page%2$s."
 msgstr "Puedes solucionar este problema en la %1$spágina de ajustes de enlaces permanentes%2$s."
 
@@ -3144,8 +3180,8 @@ msgid "Make %1$s primary %2$s"
 msgstr "Hacer %1$s primario %2$s"
 
 #: admin/pages/dashboard.php:47 admin/pages/network.php:20
-#: admin/views/tabs/dashboard/integrations.php:21
-#: admin/views/tabs/network/integrations.php:19
+#: admin/views/tabs/dashboard/integrations.php:22
+#: admin/views/tabs/network/integrations.php:21
 msgid "Integrations"
 msgstr "Integraciones"
 
@@ -3175,7 +3211,8 @@ msgstr "El separador definido en la etiqueta %s de tu tema."
 msgid "No index"
 msgstr "No indexar"
 
-#: admin/ryte/class-ryte.php:111
+#: src/deprecated/admin/ryte/class-ryte.php:137
+#: src/integrations/admin/ryte-integration.php:132
 msgid "Once Weekly"
 msgstr "Una vez por semana"
 
@@ -3193,27 +3230,26 @@ msgstr "La primera verdadera solución SEO todo en uno para WordPress, incluyend
 
 #. Plugin Name of the plugin
 #: admin/capabilities/class-capability-manager-integration.php:72
-#: src/integrations/third-party/elementor.php:184
-#: src/integrations/third-party/elementor.php:202 js/dist/block-editor.js:63
+#: js/dist/block-editor.js:63
 msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
-#: wp-seo-main.php:605
+#: wp-seo-main.php:604
 msgid "Activation failed:"
 msgstr "Ha fallado la activación:"
 
-#: wp-seo-main.php:594
+#: wp-seo-main.php:593
 msgid "The filter extension seem to be unavailable. Please ask your web host to enable it."
 msgstr "La extensión filtro parece no estar disponible. Por favor, pide a tu proveedor de alojamiento web que la habilite."
 
 #. translators: %1$s expands to Yoast SEO, %2$s / %3$s: links to the
 #. installation manual in the Readme for the Yoast SEO code repository on
 #. GitHub
-#: wp-seo-main.php:570
+#: wp-seo-main.php:569
 msgid "The %1$s plugin installation is incomplete. Please refer to %2$sinstallation instructions%3$s."
 msgstr "La instalación del plugin %1$s no se ha completado. Por favor, consulta las %2$sinstrucciones de instalación%3$s."
 
-#: wp-seo-main.php:548
+#: wp-seo-main.php:547
 msgid "The Standard PHP Library (SPL) extension seem to be unavailable. Please ask your web host to enable it."
 msgstr "La extensión de librería estándar PHP (SPL) parece no estar disponible. Por favor, pide a tu proveedor de hosting que la active."
 
@@ -3269,7 +3305,7 @@ msgid "%1$s does not seem to be a valid %2$s verification string. Please correct
 msgstr "%1$s no parece que sea una cadena válida de verificación de %2$s. Por favor corrígelo."
 
 #. translators: %s expands to the name of a post type (plural).
-#: inc/class-upgrade.php:1224 inc/options/class-wpseo-option-titles.php:283
+#: inc/class-upgrade.php:1242 inc/options/class-wpseo-option-titles.php:283
 msgid "%s Archive"
 msgstr "%s archivo"
 
@@ -3347,7 +3383,7 @@ msgstr "Error 404: Página no encontrada"
 #: inc/class-wpseo-rank.php:142 inc/class-wpseo-rank.php:173
 #: inc/class-wpseo-rank.php:205 js/dist/block-editor.js:1
 #: js/dist/block-editor.js:63 js/dist/editor-modules.js:1
-#: js/dist/externals-components.js:33 js/dist/externals/analysis.js:356
+#: js/dist/externals-components.js:1 js/dist/externals/analysis.js:357
 #: js/dist/post-edit.js:1 js/dist/term-edit.js:1
 msgid "Good"
 msgstr "Bien"
@@ -3513,7 +3549,7 @@ msgstr "Página no encontrada"
 
 #. translators: %s expands to the variable used for term title.
 #: admin/formatter/class-term-metabox-formatter.php:164
-#: inc/class-upgrade.php:1227 inc/options/class-wpseo-option-titles.php:319
+#: inc/class-upgrade.php:1245 inc/options/class-wpseo-option-titles.php:319
 msgid "%s Archives"
 msgstr "%s archivos"
 
@@ -3708,7 +3744,7 @@ msgstr "Añade meta datos de tarjeta de Twitter"
 msgid "This image is used if the post/page being shared does not contain any images."
 msgstr "Esta imagen se usa si la entrada/página compartida no contiene ninguna imagen."
 
-#: src/integrations/admin/import-integration.php:128
+#: src/integrations/admin/import-integration.php:117
 msgid "Default settings"
 msgstr "Ajustes por defecto"
 
@@ -4011,7 +4047,7 @@ msgid "Archives"
 msgstr "Archivos"
 
 #: admin/google_search_console/views/gsc-redirect-nopremium.php:27
-#: js/dist/externals-components.js:25 js/dist/externals/componentsNew.js:1
+#: js/dist/externals-components.js:29 js/dist/externals/componentsNew.js:1
 msgid "Close"
 msgstr "Cerrar"
 
@@ -4045,8 +4081,8 @@ msgstr "Facebook"
 #: admin/statistics/class-statistics-service.php:222
 #: inc/class-wpseo-rank.php:141 inc/class-wpseo-rank.php:168
 #: inc/class-wpseo-rank.php:200 js/dist/block-editor.js:1
-#: js/dist/editor-modules.js:1 js/dist/externals-components.js:33
-#: js/dist/externals/analysis.js:356 js/dist/post-edit.js:1
+#: js/dist/editor-modules.js:1 js/dist/externals-components.js:1
+#: js/dist/externals/analysis.js:357 js/dist/post-edit.js:1
 #: js/dist/term-edit.js:1
 msgid "OK"
 msgstr "Aceptable"
@@ -4059,12 +4095,12 @@ msgstr "Meta Desc."
 msgid "All SEO Scores"
 msgstr "Todas las puntuaciones SEO"
 
-#: admin/metabox/class-metabox.php:917
+#: admin/metabox/class-metabox.php:919
 #: src/integrations/third-party/elementor.php:442
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "Problema de SEO: La imagen destacada debe ser de al menos 200 por 200 píxeles para que la use Facebook y otros sitios de redes sociales."
 
-#: admin/metabox/class-metabox.php:873 admin/taxonomy/class-taxonomy.php:151
+#: admin/metabox/class-metabox.php:875 admin/taxonomy/class-taxonomy.php:151
 #: admin/taxonomy/class-taxonomy.php:272
 #: src/integrations/third-party/elementor.php:397
 msgid "(no parent)"
@@ -4132,7 +4168,7 @@ msgstr "Meta robots avanzado"
 msgid "Warning: even though you can set the meta robots setting here, the entire site is set to noindex in the sitewide privacy settings, so these settings won't have an effect."
 msgstr "¡Aviso! Aunque puedes establecer aquí el meta robots, toda la web está establecida como noindex en los ajustes de privacidad para toda la web, por lo que estos ajustes no tendrán efecto."
 
-#: admin/metabox/class-metabox.php:173 js/dist/externals/analysis.js:356
+#: admin/metabox/class-metabox.php:173 js/dist/externals/analysis.js:357
 #: js/dist/externals/replacementVariableEditor.js:1
 #: js/dist/externals/searchMetadataPreviews.js:2
 msgid "Meta description"
@@ -4183,7 +4219,7 @@ msgstr "Separador de las migas de pan:"
 msgid "%s Breadcrumbs"
 msgstr "%s Migas de pan"
 
-#: admin/class-config.php:122 admin/metabox/class-metabox.php:898
+#: admin/class-config.php:122 admin/metabox/class-metabox.php:900
 #: admin/taxonomy/class-taxonomy.php:166
 #: src/integrations/third-party/elementor.php:423
 msgid "Use Image"
@@ -4278,7 +4314,7 @@ msgstr "FAQ"
 msgid "Settings"
 msgstr "Ajustes"
 
-#: admin/class-admin-init.php:401
+#: admin/class-admin-init.php:389
 msgid "Huge SEO Issue: You're blocking access to robots."
 msgstr "Enorme problema de SEO: Estás bloqueando el acceso a los robots."
 
@@ -4321,7 +4357,7 @@ msgstr "Social"
 #: admin/menu/class-network-admin-menu.php:35
 #: admin/metabox/class-metabox.php:411
 #: admin/taxonomy/class-taxonomy-metabox.php:132
-#: inc/class-wpseo-admin-bar-menu.php:471 inc/health-check.php:174
+#: inc/class-wpseo-admin-bar-menu.php:471
 #: src/presenters/meta-description-presenter.php:36
 #: src/services/health-check/report-builder.php:168
 #: js/dist/structured-data-blocks.js:9
@@ -4334,7 +4370,7 @@ msgstr "SEO"
 msgid "%1$s detected you are using version %2$s of %3$s, please update to the latest version to prevent compatibility issues."
 msgstr "%1$s ha detectado que estás usando la versión %2$s de %3$s, por favor, actualiza a la última versión para evitar problemas de compatibilidad."
 
-#: admin/class-admin-init.php:461
+#: admin/class-admin-init.php:449
 #: src/services/health-check/default-tagline-runner.php:31
 msgid "Just another WordPress site"
 msgstr "Otro sitio creado con WordPress"
