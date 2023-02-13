@@ -40,12 +40,12 @@
 
   &--primary {
     padding: gap(3) gap(4);
-    color: var(--primary--dark);
+    color: var(--primary-dark);
     background-color: var(--primary);
 
     svg {
       path {
-        fill: var(--primary--dark);
+        fill: var(--primary-dark);
       }
     }
 
