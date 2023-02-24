@@ -133,7 +133,7 @@ add_action('init', function () {
 /**
  * Disable Gutenberg core blocks
  */
-add_filter('allowed_block_types', function ($allowed_blocks) {
+add_filter('allowed_block_types_all', function ($allowed_blocks) {
     return [
         'acf/intro',
         'acf/cta',
