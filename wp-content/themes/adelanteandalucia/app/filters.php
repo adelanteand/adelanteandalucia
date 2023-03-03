@@ -163,7 +163,7 @@ add_filter('excerpt_length', function() { return 20; }, 10);
 //exclude sticky from home blog query
 add_action('pre_get_posts', function($query) {
     if ($query->is_home() && $query->is_main_query()) {
-        $query->set('post__not_in', [end(get_option('sticky_posts'))]);
+        $query->set('post__not_in', array_slice(get_option('sticky_posts'), -1));
     }
     $query->set('ignore_sticky_posts', true);
 });
